@@ -34,9 +34,11 @@ namespace Projeto_N2_POO.Classes
         }
         public double TotalRecebidoDePedagios { get; private set; }
 
-        public void Receber(IVeiculoPagaPedagio veiculo)
+        public string Receber(IVeiculoPagaPedagio veiculo)
         {
             TotalRecebidoDePedagios += veiculo.PagarPedagio();
+
+            return veiculo.ToString() + "|Pagou: " + veiculo.PagarPedagio();
         }
         public override string ToString()
         {

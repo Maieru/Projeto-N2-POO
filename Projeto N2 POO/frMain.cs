@@ -11,11 +11,19 @@ using System.Windows.Forms;
 
 namespace Projeto_N2_POO
 {
-    public partial class Form1 : Form
+    public partial class frMain : Form
     {
-        public Form1()
+        public frMain()
         {
             InitializeComponent();
+        }
+
+        private void btnAbriMenuCadastro_Click(object sender, EventArgs e)
+        {
+            if (pnlCadastro.Visible)
+                pnlCadastro.Visible = false;
+            else
+                pnlCadastro.Visible = true;
         }
     }
 }

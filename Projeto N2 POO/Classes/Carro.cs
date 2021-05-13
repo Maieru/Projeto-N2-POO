@@ -20,12 +20,9 @@ namespace Projeto_N2_POO.Classes
 
             return 7.00;
         }
-
         public void LigaDesligaLimpador()
         {
             Console.WriteLine("Limpador do veículo " + Marca + " " + Modelo + "  ligado.");
         }
-
-        
     }
 }
