@@ -9,6 +9,7 @@ namespace Projeto_N2_POO.Classes
 {
     class Carro : VeiculoBase, IVeiculoPagaPedagio, IVeiculoPossuiPassageiro, IVeiculoComLimpador
     {
+        public int QuantidadeDeEixos { get; set; }
         public int CapacidadeDePassageiro { get; set; }
 
         public Marca Marca { get; set; }
@@ -25,7 +26,7 @@ namespace Projeto_N2_POO.Classes
 
         public override string ToString()
         {
-            return base.ToString() + Marca +  "|" + CapacidadeDePassageiro;
+            return base.ToString() + Marca + "|" + QuantidadeDeEixos + "|" + CapacidadeDePassageiro;
         }
 
     }

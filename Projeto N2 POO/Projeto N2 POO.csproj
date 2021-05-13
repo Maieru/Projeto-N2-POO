@@ -114,5 +114,50 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_ic_motorcycle_48px_3669326.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviao-voando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aviao-voando1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vista-inferior-do-aviao-do-exercito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini-trem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barco-a-vela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navio de guerra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brand1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modelo-3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\semaforo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gerenciamento-de-conteudo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_gear-innovation-process-setting-engine_3209343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-ios7-information-outline_211761.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sobre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

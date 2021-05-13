@@ -25,5 +25,13 @@ namespace Projeto_N2_POO
             else
                 pnlCadastro.Visible = true;
         }
+
+        private void btnGerencia_Click(object sender, EventArgs e)
+        {
+            if (pnlGerencia.Visible)
+                pnlGerencia.Visible = false;
+            else
+                pnlGerencia.Visible = true;
+        }
     }
 }

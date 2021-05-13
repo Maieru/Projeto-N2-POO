@@ -63,6 +63,76 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aviao_voando {
+            get {
+                object obj = ResourceManager.GetObject("aviao-voando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aviao_voando1 {
+            get {
+                object obj = ResourceManager.GetObject("aviao-voando1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap barco_a_vela {
+            get {
+                object obj = ResourceManager.GetObject("barco-a-vela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap brand {
+            get {
+                object obj = ResourceManager.GetObject("brand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap brand1 {
+            get {
+                object obj = ResourceManager.GetObject("brand1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap configu {
+            get {
+                object obj = ResourceManager.GetObject("configu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gerenciamento_de_conteudo {
+            get {
+                object obj = ResourceManager.GetObject("gerenciamento-de-conteudo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Adventure_Line_23_3687823 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Adventure-Line-23_3687823", resourceCulture);
@@ -93,6 +163,16 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_gear_innovation_process_setting_engine_3209343 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_gear-innovation-process-setting-engine_3209343", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_ic_directions_car_48px_352315 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_ic_directions_car_48px_352315", resourceCulture);
@@ -113,9 +193,79 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_icon_ios7_information_outline_211761 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_icon-ios7-information-outline_211761", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_truck_3325158 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_truck_3325158", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mini_trem {
+            get {
+                object obj = ResourceManager.GetObject("mini-trem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modelo_3d {
+            get {
+                object obj = ResourceManager.GetObject("modelo-3d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navio_de_guerra {
+            get {
+                object obj = ResourceManager.GetObject("navio de guerra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap semaforo {
+            get {
+                object obj = ResourceManager.GetObject("semaforo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sobre {
+            get {
+                object obj = ResourceManager.GetObject("sobre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vista_inferior_do_aviao_do_exercito {
+            get {
+                object obj = ResourceManager.GetObject("vista-inferior-do-aviao-do-exercito", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
