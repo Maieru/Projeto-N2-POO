@@ -78,6 +78,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,6 +95,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="User Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Adventure-Line-23_3687823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_truck_3325158.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_ic_directions_car_48px_352315.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_edit-document-note-writing-review_3209355.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_bus_452386.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_ic_motorcycle_48px_3669326.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
