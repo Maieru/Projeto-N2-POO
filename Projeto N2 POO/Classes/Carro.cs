@@ -16,16 +16,18 @@ namespace Projeto_N2_POO.Classes
 
         public double PagarPedagio()
         {
-            Console.WriteLine("Veículo " + Marca + " " + Modelo + " pagou R$ 7,00.");
-
             return 7.00;
         }
 
-        public void LigaDesligaLimpador()
+        public string LigaDesligaLimpador()
         {
-            Console.WriteLine("Limpador do veículo " + Marca + " " + Modelo + "  ligado.");
+            return "Limpador do veículo " + Marca + " " + Modelo + "  ligado.";
         }
 
-        
+        public override string ToString()
+        {
+            return base.ToString() + Marca + "|" + QuantidadeDeEixos + "|" + CapacidadeDePassageiro;
+        }
+
     }
 }

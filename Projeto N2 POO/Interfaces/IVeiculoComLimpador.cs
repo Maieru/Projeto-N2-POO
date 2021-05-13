@@ -8,6 +8,6 @@ namespace Projeto_N2_POO.Interfaces
 {
     interface IVeiculoComLimpador
     {
-        void LigaDesligaLimpador();
+        string LigaDesligaLimpador();
     }
 }
