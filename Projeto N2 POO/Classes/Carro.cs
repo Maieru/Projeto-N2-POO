@@ -7,7 +7,7 @@ using Projeto_N2_POO.Interfaces;
 
 namespace Projeto_N2_POO.Classes
 {
-    class Carro : VeiculoBase, IVeiculoComEixos, IVeiculoPagaPedagio, IVeiculoPossuiPassageiro, IVeiculoComLimpador
+    class Carro : VeiculoBase, IVeiculoPagaPedagio, IVeiculoPossuiPassageiro, IVeiculoComLimpador
     {
         public int QuantidadeDeEixos { get; set; }
         public int CapacidadeDePassageiro { get; set; }
