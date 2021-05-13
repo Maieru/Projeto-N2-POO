@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classes\Marca.cs" />
     <Compile Include="Classes\Modelo.cs" />
+    <Compile Include="Classes\Moto.cs" />
     <Compile Include="Classes\Pedagio.cs" />
     <Compile Include="Classes\VeiculoBase.cs" />
     <Compile Include="Form1.cs">
