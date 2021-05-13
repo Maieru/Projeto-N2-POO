@@ -7,7 +7,7 @@ using Projeto_N2_POO.Interfaces;
 
 namespace Projeto_N2_POO.Classes
 {
-    class Carro : VeiculoBase, IVeiculoComEixos, IVeiculoPagaPedagio, IVeiculoPossuiPassageiro, IVeiculoComLimpador
+    class Carro : VeiculoBase, IVeiculoPagaPedagio, IVeiculoPossuiPassageiro, IVeiculoComLimpador
     {
         public int QuantidadeDeEixos { get; set; }
         public int CapacidadeDePassageiro { get; set; }
@@ -16,13 +16,18 @@ namespace Projeto_N2_POO.Classes
 
         public double PagarPedagio()
         {
-            Console.WriteLine("Veículo " + Marca + " " + Modelo + " pagou R$ 7,00.");
-
             return 7.00;
         }
-        public void LigaDesligaLimpador()
+
+        public string LigaDesligaLimpador()
         {
-            Console.WriteLine("Limpador do veículo " + Marca + " " + Modelo + "  ligado.");
+            return "Limpador do veículo " + Marca + " " + Modelo + "  ligado.";
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + Marca + "|" + QuantidadeDeEixos + "|" + CapacidadeDePassageiro;
+        }
+
     }
 }
