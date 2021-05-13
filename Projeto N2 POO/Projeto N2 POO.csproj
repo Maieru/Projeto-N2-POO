@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Carro.cs" />
     <Compile Include="Classes\Marca.cs" />
     <Compile Include="Classes\Modelo.cs" />
     <Compile Include="Classes\Pedagio.cs" />
@@ -57,6 +58,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IVeiculoComEixos.cs" />
+    <Compile Include="Interfaces\IVeiculoComLimpador.cs" />
     <Compile Include="Interfaces\IVeiculoDeGuerra.cs" />
     <Compile Include="Interfaces\IVeiculoMarino.cs" />
     <Compile Include="Interfaces\IVeiculoPagaPedagio.cs" />
