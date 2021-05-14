@@ -30,55 +30,57 @@ namespace Projeto_N2_POO
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlGerencia = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pnlCadastro = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnlGerencia = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.pnlMainForm = new System.Windows.Forms.Panel();
+            this.btnSobre = new System.Windows.Forms.Button();
+            this.btnConfig = new System.Windows.Forms.Button();
+            this.btnGenNavioDeGuerra = new System.Windows.Forms.Button();
+            this.btnGenNavio = new System.Windows.Forms.Button();
+            this.btnGenTrem = new System.Windows.Forms.Button();
+            this.btnGenAviaoDeGuerra = new System.Windows.Forms.Button();
+            this.btnGenAviao = new System.Windows.Forms.Button();
+            this.btnGenMoto = new System.Windows.Forms.Button();
+            this.btnGenOnibus = new System.Windows.Forms.Button();
+            this.btnGenCaminhao = new System.Windows.Forms.Button();
+            this.btnGenCarro = new System.Windows.Forms.Button();
             this.btnGerencia = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCadSemaforo = new System.Windows.Forms.Button();
+            this.btnCadModelo = new System.Windows.Forms.Button();
+            this.btnCadMarca = new System.Windows.Forms.Button();
+            this.btnCadNavioDeGuerra = new System.Windows.Forms.Button();
+            this.btnCadNavio = new System.Windows.Forms.Button();
+            this.btnCadTrem = new System.Windows.Forms.Button();
+            this.btnCadAviaoDeGuerra = new System.Windows.Forms.Button();
+            this.btnCadAviao = new System.Windows.Forms.Button();
+            this.btnCadMoto = new System.Windows.Forms.Button();
+            this.btnCadOnibus = new System.Windows.Forms.Button();
+            this.btnCadCaminhao = new System.Windows.Forms.Button();
+            this.btnCadCarro = new System.Windows.Forms.Button();
             this.btnMenuCadastro = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            this.pnlCadastro.SuspendLayout();
             this.pnlGerencia.SuspendLayout();
+            this.pnlCadastro.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
-            this.panel2.Controls.Add(this.button24);
-            this.panel2.Controls.Add(this.button23);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.panel2.Controls.Add(this.btnSobre);
+            this.panel2.Controls.Add(this.btnConfig);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.pnlGerencia);
             this.panel2.Controls.Add(this.btnGerencia);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.button12);
-            this.panel2.Controls.Add(this.button11);
-            this.panel2.Controls.Add(this.button10);
+            this.panel2.Controls.Add(this.btnCadSemaforo);
+            this.panel2.Controls.Add(this.btnCadModelo);
+            this.panel2.Controls.Add(this.btnCadMarca);
             this.panel2.Controls.Add(this.pnlCadastro);
             this.panel2.Controls.Add(this.btnMenuCadastro);
             this.panel2.Controls.Add(this.panel3);
@@ -89,18 +91,53 @@ namespace Projeto_N2_POO
             this.panel2.Size = new System.Drawing.Size(225, 500);
             this.panel2.TabIndex = 1;
             // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 925);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(208, 20);
+            this.panel5.TabIndex = 9;
+            // 
+            // pnlGerencia
+            // 
+            this.pnlGerencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pnlGerencia.Controls.Add(this.btnGenNavioDeGuerra);
+            this.pnlGerencia.Controls.Add(this.btnGenNavio);
+            this.pnlGerencia.Controls.Add(this.btnGenTrem);
+            this.pnlGerencia.Controls.Add(this.btnGenAviaoDeGuerra);
+            this.pnlGerencia.Controls.Add(this.btnGenAviao);
+            this.pnlGerencia.Controls.Add(this.btnGenMoto);
+            this.pnlGerencia.Controls.Add(this.btnGenOnibus);
+            this.pnlGerencia.Controls.Add(this.btnGenCaminhao);
+            this.pnlGerencia.Controls.Add(this.btnGenCarro);
+            this.pnlGerencia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlGerencia.Location = new System.Drawing.Point(0, 610);
+            this.pnlGerencia.Name = "pnlGerencia";
+            this.pnlGerencia.Size = new System.Drawing.Size(208, 315);
+            this.pnlGerencia.TabIndex = 8;
+            this.pnlGerencia.Visible = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 555);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(208, 20);
+            this.panel4.TabIndex = 0;
+            // 
             // pnlCadastro
             // 
             this.pnlCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.pnlCadastro.Controls.Add(this.button9);
-            this.pnlCadastro.Controls.Add(this.button8);
-            this.pnlCadastro.Controls.Add(this.button7);
-            this.pnlCadastro.Controls.Add(this.button6);
-            this.pnlCadastro.Controls.Add(this.button5);
-            this.pnlCadastro.Controls.Add(this.button4);
-            this.pnlCadastro.Controls.Add(this.button3);
-            this.pnlCadastro.Controls.Add(this.button2);
-            this.pnlCadastro.Controls.Add(this.button1);
+            this.pnlCadastro.Controls.Add(this.btnCadNavioDeGuerra);
+            this.pnlCadastro.Controls.Add(this.btnCadNavio);
+            this.pnlCadastro.Controls.Add(this.btnCadTrem);
+            this.pnlCadastro.Controls.Add(this.btnCadAviaoDeGuerra);
+            this.pnlCadastro.Controls.Add(this.btnCadAviao);
+            this.pnlCadastro.Controls.Add(this.btnCadMoto);
+            this.pnlCadastro.Controls.Add(this.btnCadOnibus);
+            this.pnlCadastro.Controls.Add(this.btnCadCaminhao);
+            this.pnlCadastro.Controls.Add(this.btnCadCarro);
             this.pnlCadastro.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCadastro.Location = new System.Drawing.Point(0, 135);
             this.pnlCadastro.Name = "pnlCadastro";
@@ -119,277 +156,253 @@ namespace Projeto_N2_POO
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pnlMainForm);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(225, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(575, 500);
             this.panel1.TabIndex = 2;
             // 
-            // panel4
+            // pnlMainForm
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 555);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(208, 20);
-            this.panel4.TabIndex = 0;
+            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(135)))));
+            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainForm.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainForm.Name = "pnlMainForm";
+            this.pnlMainForm.Size = new System.Drawing.Size(575, 500);
+            this.pnlMainForm.TabIndex = 0;
             // 
-            // pnlGerencia
+            // btnSobre
             // 
-            this.pnlGerencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.pnlGerencia.Controls.Add(this.button14);
-            this.pnlGerencia.Controls.Add(this.button15);
-            this.pnlGerencia.Controls.Add(this.button16);
-            this.pnlGerencia.Controls.Add(this.button17);
-            this.pnlGerencia.Controls.Add(this.button18);
-            this.pnlGerencia.Controls.Add(this.button19);
-            this.pnlGerencia.Controls.Add(this.button20);
-            this.pnlGerencia.Controls.Add(this.button21);
-            this.pnlGerencia.Controls.Add(this.button22);
-            this.pnlGerencia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlGerencia.Location = new System.Drawing.Point(0, 610);
-            this.pnlGerencia.Name = "pnlGerencia";
-            this.pnlGerencia.Size = new System.Drawing.Size(208, 315);
-            this.pnlGerencia.TabIndex = 8;
-            this.pnlGerencia.Visible = false;
+            this.btnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnSobre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSobre.FlatAppearance.BorderSize = 0;
+            this.btnSobre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSobre.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSobre.ForeColor = System.Drawing.Color.White;
+            this.btnSobre.Image = global::Projeto_N2_POO.Properties.Resources.sobre;
+            this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSobre.Location = new System.Drawing.Point(0, 980);
+            this.btnSobre.Name = "btnSobre";
+            this.btnSobre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSobre.Size = new System.Drawing.Size(208, 35);
+            this.btnSobre.TabIndex = 11;
+            this.btnSobre.Text = "Sobre";
+            this.btnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSobre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSobre.UseVisualStyleBackColor = false;
+            this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
-            // panel5
+            // btnConfig
             // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 925);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(208, 20);
-            this.panel5.TabIndex = 9;
+            this.btnConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnConfig.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConfig.FlatAppearance.BorderSize = 0;
+            this.btnConfig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfig.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfig.ForeColor = System.Drawing.Color.White;
+            this.btnConfig.Image = global::Projeto_N2_POO.Properties.Resources.configu;
+            this.btnConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfig.Location = new System.Drawing.Point(0, 945);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnConfig.Size = new System.Drawing.Size(208, 35);
+            this.btnConfig.TabIndex = 10;
+            this.btnConfig.Text = "Configurações";
+            this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfig.UseVisualStyleBackColor = false;
             // 
-            // button24
+            // btnGenNavioDeGuerra
             // 
-            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.ForeColor = System.Drawing.Color.White;
-            this.button24.Image = global::Projeto_N2_POO.Properties.Resources.sobre;
-            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.Location = new System.Drawing.Point(0, 980);
-            this.button24.Name = "button24";
-            this.button24.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button24.Size = new System.Drawing.Size(208, 35);
-            this.button24.TabIndex = 11;
-            this.button24.Text = "Sobre";
-            this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button24.UseVisualStyleBackColor = false;
+            this.btnGenNavioDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenNavioDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenNavioDeGuerra.FlatAppearance.BorderSize = 0;
+            this.btnGenNavioDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenNavioDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenNavioDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenNavioDeGuerra.ForeColor = System.Drawing.Color.White;
+            this.btnGenNavioDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
+            this.btnGenNavioDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavioDeGuerra.Location = new System.Drawing.Point(0, 280);
+            this.btnGenNavioDeGuerra.Name = "btnGenNavioDeGuerra";
+            this.btnGenNavioDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenNavioDeGuerra.Size = new System.Drawing.Size(208, 35);
+            this.btnGenNavioDeGuerra.TabIndex = 9;
+            this.btnGenNavioDeGuerra.Text = "Navio de Guerra";
+            this.btnGenNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenNavioDeGuerra.UseVisualStyleBackColor = false;
             // 
-            // button23
+            // btnGenNavio
             // 
-            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.button23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.ForeColor = System.Drawing.Color.White;
-            this.button23.Image = global::Projeto_N2_POO.Properties.Resources.configu;
-            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.Location = new System.Drawing.Point(0, 945);
-            this.button23.Name = "button23";
-            this.button23.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button23.Size = new System.Drawing.Size(208, 35);
-            this.button23.TabIndex = 10;
-            this.button23.Text = "Configurações";
-            this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button23.UseVisualStyleBackColor = false;
+            this.btnGenNavio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenNavio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenNavio.FlatAppearance.BorderSize = 0;
+            this.btnGenNavio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenNavio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenNavio.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenNavio.ForeColor = System.Drawing.Color.White;
+            this.btnGenNavio.Image = global::Projeto_N2_POO.Properties.Resources.barco_a_vela;
+            this.btnGenNavio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavio.Location = new System.Drawing.Point(0, 245);
+            this.btnGenNavio.Name = "btnGenNavio";
+            this.btnGenNavio.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenNavio.Size = new System.Drawing.Size(208, 35);
+            this.btnGenNavio.TabIndex = 8;
+            this.btnGenNavio.Text = "Navio";
+            this.btnGenNavio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenNavio.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // btnGenTrem
             // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(0, 280);
-            this.button14.Name = "button14";
-            this.button14.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(208, 35);
-            this.button14.TabIndex = 9;
-            this.button14.Text = "Navio de Guerra";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = false;
+            this.btnGenTrem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenTrem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenTrem.FlatAppearance.BorderSize = 0;
+            this.btnGenTrem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenTrem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenTrem.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenTrem.ForeColor = System.Drawing.Color.White;
+            this.btnGenTrem.Image = global::Projeto_N2_POO.Properties.Resources.mini_trem;
+            this.btnGenTrem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenTrem.Location = new System.Drawing.Point(0, 210);
+            this.btnGenTrem.Name = "btnGenTrem";
+            this.btnGenTrem.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenTrem.Size = new System.Drawing.Size(208, 35);
+            this.btnGenTrem.TabIndex = 7;
+            this.btnGenTrem.Text = "Trem";
+            this.btnGenTrem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenTrem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenTrem.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // btnGenAviaoDeGuerra
             // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = global::Projeto_N2_POO.Properties.Resources.barco_a_vela;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(0, 245);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(208, 35);
-            this.button15.TabIndex = 8;
-            this.button15.Text = "Navio";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button15.UseVisualStyleBackColor = false;
+            this.btnGenAviaoDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenAviaoDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenAviaoDeGuerra.FlatAppearance.BorderSize = 0;
+            this.btnGenAviaoDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenAviaoDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenAviaoDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenAviaoDeGuerra.ForeColor = System.Drawing.Color.White;
+            this.btnGenAviaoDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.vista_inferior_do_aviao_do_exercito;
+            this.btnGenAviaoDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenAviaoDeGuerra.Location = new System.Drawing.Point(0, 175);
+            this.btnGenAviaoDeGuerra.Name = "btnGenAviaoDeGuerra";
+            this.btnGenAviaoDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenAviaoDeGuerra.Size = new System.Drawing.Size(208, 35);
+            this.btnGenAviaoDeGuerra.TabIndex = 6;
+            this.btnGenAviaoDeGuerra.Text = "Avião de Guerra";
+            this.btnGenAviaoDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenAviaoDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenAviaoDeGuerra.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // btnGenAviao
             // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = global::Projeto_N2_POO.Properties.Resources.mini_trem;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(0, 210);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button16.Size = new System.Drawing.Size(208, 35);
-            this.button16.TabIndex = 7;
-            this.button16.Text = "Trem";
-            this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button16.UseVisualStyleBackColor = false;
+            this.btnGenAviao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenAviao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenAviao.FlatAppearance.BorderSize = 0;
+            this.btnGenAviao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenAviao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenAviao.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenAviao.ForeColor = System.Drawing.Color.White;
+            this.btnGenAviao.Image = global::Projeto_N2_POO.Properties.Resources.aviao_voando1;
+            this.btnGenAviao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenAviao.Location = new System.Drawing.Point(0, 140);
+            this.btnGenAviao.Name = "btnGenAviao";
+            this.btnGenAviao.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenAviao.Size = new System.Drawing.Size(208, 35);
+            this.btnGenAviao.TabIndex = 5;
+            this.btnGenAviao.Text = "Avião";
+            this.btnGenAviao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenAviao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenAviao.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnGenMoto
             // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = global::Projeto_N2_POO.Properties.Resources.vista_inferior_do_aviao_do_exercito;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(0, 175);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button17.Size = new System.Drawing.Size(208, 35);
-            this.button17.TabIndex = 6;
-            this.button17.Text = "Avião de Guerra";
-            this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = false;
+            this.btnGenMoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenMoto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenMoto.FlatAppearance.BorderSize = 0;
+            this.btnGenMoto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenMoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenMoto.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenMoto.ForeColor = System.Drawing.Color.White;
+            this.btnGenMoto.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_motorcycle_48px_3669326;
+            this.btnGenMoto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenMoto.Location = new System.Drawing.Point(0, 105);
+            this.btnGenMoto.Name = "btnGenMoto";
+            this.btnGenMoto.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenMoto.Size = new System.Drawing.Size(208, 35);
+            this.btnGenMoto.TabIndex = 4;
+            this.btnGenMoto.Text = "Moto";
+            this.btnGenMoto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenMoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenMoto.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // btnGenOnibus
             // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Image = global::Projeto_N2_POO.Properties.Resources.aviao_voando1;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(0, 140);
-            this.button18.Name = "button18";
-            this.button18.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button18.Size = new System.Drawing.Size(208, 35);
-            this.button18.TabIndex = 5;
-            this.button18.Text = "Avião";
-            this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnGenOnibus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenOnibus.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenOnibus.FlatAppearance.BorderSize = 0;
+            this.btnGenOnibus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenOnibus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenOnibus.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenOnibus.ForeColor = System.Drawing.Color.White;
+            this.btnGenOnibus.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_bus_452386;
+            this.btnGenOnibus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenOnibus.Location = new System.Drawing.Point(0, 70);
+            this.btnGenOnibus.Name = "btnGenOnibus";
+            this.btnGenOnibus.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenOnibus.Size = new System.Drawing.Size(208, 35);
+            this.btnGenOnibus.TabIndex = 3;
+            this.btnGenOnibus.Text = "Ônibus";
+            this.btnGenOnibus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenOnibus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenOnibus.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // btnGenCaminhao
             // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_motorcycle_48px_3669326;
-            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.Location = new System.Drawing.Point(0, 105);
-            this.button19.Name = "button19";
-            this.button19.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(208, 35);
-            this.button19.TabIndex = 4;
-            this.button19.Text = "Moto";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button19.UseVisualStyleBackColor = false;
+            this.btnGenCaminhao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenCaminhao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenCaminhao.FlatAppearance.BorderSize = 0;
+            this.btnGenCaminhao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenCaminhao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenCaminhao.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenCaminhao.ForeColor = System.Drawing.Color.White;
+            this.btnGenCaminhao.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_truck_3325158;
+            this.btnGenCaminhao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenCaminhao.Location = new System.Drawing.Point(0, 35);
+            this.btnGenCaminhao.Name = "btnGenCaminhao";
+            this.btnGenCaminhao.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenCaminhao.Size = new System.Drawing.Size(208, 35);
+            this.btnGenCaminhao.TabIndex = 2;
+            this.btnGenCaminhao.Text = "Caminhão";
+            this.btnGenCaminhao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenCaminhao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenCaminhao.UseVisualStyleBackColor = false;
             // 
-            // button20
+            // btnGenCarro
             // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_bus_452386;
-            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.Location = new System.Drawing.Point(0, 70);
-            this.button20.Name = "button20";
-            this.button20.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button20.Size = new System.Drawing.Size(208, 35);
-            this.button20.TabIndex = 3;
-            this.button20.Text = "Ônibus";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_truck_3325158;
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(0, 35);
-            this.button21.Name = "button21";
-            this.button21.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button21.Size = new System.Drawing.Size(208, 35);
-            this.button21.TabIndex = 2;
-            this.button21.Text = "Caminhão";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_directions_car_48px_352315;
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(0, 0);
-            this.button22.Name = "button22";
-            this.button22.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button22.Size = new System.Drawing.Size(208, 35);
-            this.button22.TabIndex = 1;
-            this.button22.Text = "Carro";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button22.UseVisualStyleBackColor = false;
+            this.btnGenCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenCarro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenCarro.FlatAppearance.BorderSize = 0;
+            this.btnGenCarro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenCarro.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenCarro.ForeColor = System.Drawing.Color.White;
+            this.btnGenCarro.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_directions_car_48px_352315;
+            this.btnGenCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenCarro.Location = new System.Drawing.Point(0, 0);
+            this.btnGenCarro.Name = "btnGenCarro";
+            this.btnGenCarro.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenCarro.Size = new System.Drawing.Size(208, 35);
+            this.btnGenCarro.TabIndex = 1;
+            this.btnGenCarro.Text = "Carro";
+            this.btnGenCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenCarro.UseVisualStyleBackColor = false;
             // 
             // btnGerencia
             // 
@@ -413,257 +426,258 @@ namespace Projeto_N2_POO
             this.btnGerencia.UseVisualStyleBackColor = false;
             this.btnGerencia.Click += new System.EventHandler(this.btnGerencia_Click);
             // 
-            // button12
+            // btnCadSemaforo
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Image = global::Projeto_N2_POO.Properties.Resources.semaforo;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(0, 520);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(208, 35);
-            this.button12.TabIndex = 4;
-            this.button12.Text = "Cadastro Semáforo";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button12.UseVisualStyleBackColor = false;
+            this.btnCadSemaforo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnCadSemaforo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadSemaforo.FlatAppearance.BorderSize = 0;
+            this.btnCadSemaforo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadSemaforo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadSemaforo.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadSemaforo.ForeColor = System.Drawing.Color.White;
+            this.btnCadSemaforo.Image = global::Projeto_N2_POO.Properties.Resources.semaforo;
+            this.btnCadSemaforo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadSemaforo.Location = new System.Drawing.Point(0, 520);
+            this.btnCadSemaforo.Name = "btnCadSemaforo";
+            this.btnCadSemaforo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCadSemaforo.Size = new System.Drawing.Size(208, 35);
+            this.btnCadSemaforo.TabIndex = 4;
+            this.btnCadSemaforo.Text = "Cadastro Semáforo";
+            this.btnCadSemaforo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadSemaforo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadSemaforo.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // btnCadModelo
             // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Image = global::Projeto_N2_POO.Properties.Resources.modelo_3d;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(0, 485);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(208, 35);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "Cadastro Modelo";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnCadModelo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnCadModelo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadModelo.FlatAppearance.BorderSize = 0;
+            this.btnCadModelo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadModelo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadModelo.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadModelo.ForeColor = System.Drawing.Color.White;
+            this.btnCadModelo.Image = global::Projeto_N2_POO.Properties.Resources.modelo_3d;
+            this.btnCadModelo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadModelo.Location = new System.Drawing.Point(0, 485);
+            this.btnCadModelo.Name = "btnCadModelo";
+            this.btnCadModelo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCadModelo.Size = new System.Drawing.Size(208, 35);
+            this.btnCadModelo.TabIndex = 3;
+            this.btnCadModelo.Text = "Cadastro Modelo";
+            this.btnCadModelo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadModelo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadModelo.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnCadMarca
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Image = global::Projeto_N2_POO.Properties.Resources.brand1;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(0, 450);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(208, 35);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Cadastro Marca";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnCadMarca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnCadMarca.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadMarca.FlatAppearance.BorderSize = 0;
+            this.btnCadMarca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadMarca.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadMarca.ForeColor = System.Drawing.Color.White;
+            this.btnCadMarca.Image = global::Projeto_N2_POO.Properties.Resources.brand1;
+            this.btnCadMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadMarca.Location = new System.Drawing.Point(0, 450);
+            this.btnCadMarca.Name = "btnCadMarca";
+            this.btnCadMarca.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCadMarca.Size = new System.Drawing.Size(208, 35);
+            this.btnCadMarca.TabIndex = 2;
+            this.btnCadMarca.Text = "Cadastro Marca";
+            this.btnCadMarca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadMarca.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadMarca.UseVisualStyleBackColor = false;
+            this.btnCadMarca.Click += new System.EventHandler(this.btnCadMarca_Click);
             // 
-            // button9
+            // btnCadNavioDeGuerra
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 280);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(208, 35);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Navio de Guerra";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnCadNavioDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadNavioDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadNavioDeGuerra.FlatAppearance.BorderSize = 0;
+            this.btnCadNavioDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadNavioDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadNavioDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadNavioDeGuerra.ForeColor = System.Drawing.Color.White;
+            this.btnCadNavioDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
+            this.btnCadNavioDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadNavioDeGuerra.Location = new System.Drawing.Point(0, 280);
+            this.btnCadNavioDeGuerra.Name = "btnCadNavioDeGuerra";
+            this.btnCadNavioDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadNavioDeGuerra.Size = new System.Drawing.Size(208, 35);
+            this.btnCadNavioDeGuerra.TabIndex = 9;
+            this.btnCadNavioDeGuerra.Text = "Navio de Guerra";
+            this.btnCadNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadNavioDeGuerra.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // btnCadNavio
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = global::Projeto_N2_POO.Properties.Resources.barco_a_vela;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 245);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(208, 35);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Navio";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnCadNavio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadNavio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadNavio.FlatAppearance.BorderSize = 0;
+            this.btnCadNavio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadNavio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadNavio.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadNavio.ForeColor = System.Drawing.Color.White;
+            this.btnCadNavio.Image = global::Projeto_N2_POO.Properties.Resources.barco_a_vela;
+            this.btnCadNavio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadNavio.Location = new System.Drawing.Point(0, 245);
+            this.btnCadNavio.Name = "btnCadNavio";
+            this.btnCadNavio.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadNavio.Size = new System.Drawing.Size(208, 35);
+            this.btnCadNavio.TabIndex = 8;
+            this.btnCadNavio.Text = "Navio";
+            this.btnCadNavio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadNavio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadNavio.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnCadTrem
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::Projeto_N2_POO.Properties.Resources.mini_trem;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 210);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(208, 35);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Trem";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnCadTrem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadTrem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadTrem.FlatAppearance.BorderSize = 0;
+            this.btnCadTrem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadTrem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadTrem.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadTrem.ForeColor = System.Drawing.Color.White;
+            this.btnCadTrem.Image = global::Projeto_N2_POO.Properties.Resources.mini_trem;
+            this.btnCadTrem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadTrem.Location = new System.Drawing.Point(0, 210);
+            this.btnCadTrem.Name = "btnCadTrem";
+            this.btnCadTrem.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadTrem.Size = new System.Drawing.Size(208, 35);
+            this.btnCadTrem.TabIndex = 7;
+            this.btnCadTrem.Text = "Trem";
+            this.btnCadTrem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadTrem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadTrem.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnCadAviaoDeGuerra
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::Projeto_N2_POO.Properties.Resources.vista_inferior_do_aviao_do_exercito;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 175);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(208, 35);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Avião de Guerra";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnCadAviaoDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadAviaoDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadAviaoDeGuerra.FlatAppearance.BorderSize = 0;
+            this.btnCadAviaoDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadAviaoDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadAviaoDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadAviaoDeGuerra.ForeColor = System.Drawing.Color.White;
+            this.btnCadAviaoDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.vista_inferior_do_aviao_do_exercito;
+            this.btnCadAviaoDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadAviaoDeGuerra.Location = new System.Drawing.Point(0, 175);
+            this.btnCadAviaoDeGuerra.Name = "btnCadAviaoDeGuerra";
+            this.btnCadAviaoDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadAviaoDeGuerra.Size = new System.Drawing.Size(208, 35);
+            this.btnCadAviaoDeGuerra.TabIndex = 6;
+            this.btnCadAviaoDeGuerra.Text = "Avião de Guerra";
+            this.btnCadAviaoDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadAviaoDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadAviaoDeGuerra.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnCadAviao
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Projeto_N2_POO.Properties.Resources.aviao_voando1;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 140);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(208, 35);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Avião";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCadAviao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadAviao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadAviao.FlatAppearance.BorderSize = 0;
+            this.btnCadAviao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadAviao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadAviao.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadAviao.ForeColor = System.Drawing.Color.White;
+            this.btnCadAviao.Image = global::Projeto_N2_POO.Properties.Resources.aviao_voando1;
+            this.btnCadAviao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadAviao.Location = new System.Drawing.Point(0, 140);
+            this.btnCadAviao.Name = "btnCadAviao";
+            this.btnCadAviao.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadAviao.Size = new System.Drawing.Size(208, 35);
+            this.btnCadAviao.TabIndex = 5;
+            this.btnCadAviao.Text = "Avião";
+            this.btnCadAviao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadAviao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadAviao.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnCadMoto
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_motorcycle_48px_3669326;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 105);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(208, 35);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Moto";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCadMoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadMoto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadMoto.FlatAppearance.BorderSize = 0;
+            this.btnCadMoto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadMoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadMoto.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadMoto.ForeColor = System.Drawing.Color.White;
+            this.btnCadMoto.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_motorcycle_48px_3669326;
+            this.btnCadMoto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadMoto.Location = new System.Drawing.Point(0, 105);
+            this.btnCadMoto.Name = "btnCadMoto";
+            this.btnCadMoto.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadMoto.Size = new System.Drawing.Size(208, 35);
+            this.btnCadMoto.TabIndex = 4;
+            this.btnCadMoto.Text = "Moto";
+            this.btnCadMoto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadMoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadMoto.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnCadOnibus
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_bus_452386;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 70);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(208, 35);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Ônibus";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnCadOnibus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadOnibus.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadOnibus.FlatAppearance.BorderSize = 0;
+            this.btnCadOnibus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadOnibus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadOnibus.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadOnibus.ForeColor = System.Drawing.Color.White;
+            this.btnCadOnibus.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_bus_452386;
+            this.btnCadOnibus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadOnibus.Location = new System.Drawing.Point(0, 70);
+            this.btnCadOnibus.Name = "btnCadOnibus";
+            this.btnCadOnibus.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadOnibus.Size = new System.Drawing.Size(208, 35);
+            this.btnCadOnibus.TabIndex = 3;
+            this.btnCadOnibus.Text = "Ônibus";
+            this.btnCadOnibus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadOnibus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadOnibus.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnCadCaminhao
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_truck_3325158;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 35);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(208, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Caminhão";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCadCaminhao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadCaminhao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadCaminhao.FlatAppearance.BorderSize = 0;
+            this.btnCadCaminhao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadCaminhao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadCaminhao.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadCaminhao.ForeColor = System.Drawing.Color.White;
+            this.btnCadCaminhao.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_truck_3325158;
+            this.btnCadCaminhao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadCaminhao.Location = new System.Drawing.Point(0, 35);
+            this.btnCadCaminhao.Name = "btnCadCaminhao";
+            this.btnCadCaminhao.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadCaminhao.Size = new System.Drawing.Size(208, 35);
+            this.btnCadCaminhao.TabIndex = 2;
+            this.btnCadCaminhao.Text = "Caminhão";
+            this.btnCadCaminhao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadCaminhao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadCaminhao.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnCadCarro
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_directions_car_48px_352315;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(208, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Carro";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCadCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnCadCarro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCadCarro.FlatAppearance.BorderSize = 0;
+            this.btnCadCarro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnCadCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadCarro.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadCarro.ForeColor = System.Drawing.Color.White;
+            this.btnCadCarro.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_ic_directions_car_48px_352315;
+            this.btnCadCarro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadCarro.Location = new System.Drawing.Point(0, 0);
+            this.btnCadCarro.Name = "btnCadCarro";
+            this.btnCadCarro.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnCadCarro.Size = new System.Drawing.Size(208, 35);
+            this.btnCadCarro.TabIndex = 1;
+            this.btnCadCarro.Text = "Carro";
+            this.btnCadCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCadCarro.UseVisualStyleBackColor = false;
             // 
             // btnMenuCadastro
             // 
@@ -699,8 +713,9 @@ namespace Projeto_N2_POO
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
-            this.pnlCadastro.ResumeLayout(false);
             this.pnlGerencia.ResumeLayout(false);
+            this.pnlCadastro.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -711,33 +726,34 @@ namespace Projeto_N2_POO
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnMenuCadastro;
         private System.Windows.Forms.Panel pnlCadastro;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnCadCarro;
+        private System.Windows.Forms.Button btnCadCaminhao;
+        private System.Windows.Forms.Button btnCadOnibus;
+        private System.Windows.Forms.Button btnCadMoto;
+        private System.Windows.Forms.Button btnCadAviao;
+        private System.Windows.Forms.Button btnCadAviaoDeGuerra;
+        private System.Windows.Forms.Button btnCadTrem;
+        private System.Windows.Forms.Button btnCadNavio;
+        private System.Windows.Forms.Button btnCadNavioDeGuerra;
+        private System.Windows.Forms.Button btnCadSemaforo;
+        private System.Windows.Forms.Button btnCadModelo;
+        private System.Windows.Forms.Button btnCadMarca;
         private System.Windows.Forms.Panel pnlGerencia;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button btnGenNavioDeGuerra;
+        private System.Windows.Forms.Button btnGenNavio;
+        private System.Windows.Forms.Button btnGenTrem;
+        private System.Windows.Forms.Button btnGenAviaoDeGuerra;
+        private System.Windows.Forms.Button btnGenAviao;
+        private System.Windows.Forms.Button btnGenMoto;
+        private System.Windows.Forms.Button btnGenOnibus;
+        private System.Windows.Forms.Button btnGenCaminhao;
+        private System.Windows.Forms.Button btnGenCarro;
         private System.Windows.Forms.Button btnGerencia;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button btnSobre;
+        private System.Windows.Forms.Button btnConfig;
+        private System.Windows.Forms.Panel pnlMainForm;
     }
 }
 

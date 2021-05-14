@@ -9,24 +9,23 @@ namespace Projeto_N2_POO.Classes
 {
     class Carro : VeiculoBase, IVeiculoPagaPedagio, IVeiculoPossuiPassageiro, IVeiculoComLimpador
     {
-        public int QuantidadeDeEixos { get; set; }
         public int CapacidadeDePassageiro { get; set; }
-
+        public bool LimpadorLigado { get; private set; }
         public Marca Marca { get; set; }
 
-        public double PagarPedagio()
+        public double PagarPedagio() => 7;
+        public string AlteraLimpador()
         {
-            return 7.00;
-        }
+            if (LimpadorLigado)
+                return "Limpador do veículo " + Marca + " " + Modelo + " desligado.";
 
-        public string LigaDesligaLimpador()
-        {
-            return "Limpador do veículo " + Marca + " " + Modelo + "  ligado.";
+            return "Limpador do veículo " + Marca + " " + Modelo + " ligado.";
         }
-
         public override string ToString()
         {
-            return base.ToString() + Marca + "|" + QuantidadeDeEixos + "|" + CapacidadeDePassageiro;
+            return base.ToString() + Marca + "|" +
+                                   CapacidadeDePassageiro + "|" +
+                                   (LimpadorLigado? "Está" : "Não está") + "com limpador ligado";
         }
 
     }

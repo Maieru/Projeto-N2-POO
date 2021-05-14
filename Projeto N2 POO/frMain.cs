@@ -1,4 +1,5 @@
 ﻿using Projeto_N2_POO.Classes;
+using Projeto_N2_POO.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,13 @@ namespace Projeto_N2_POO
 {
     public partial class frMain : Form
     {
+        private Form formAberto = null;
+
         public frMain()
         {
             InitializeComponent();
+
+            Dados.LerMarcas();
         }
 
         private void btnAbriMenuCadastro_Click(object sender, EventArgs e)
@@ -32,6 +37,36 @@ namespace Projeto_N2_POO
                 pnlGerencia.Visible = false;
             else
                 pnlGerencia.Visible = true;
+        }
+
+        private void AbrirForm(Form formASerAberto)
+        {
+            if (formAberto != null)
+                formAberto.Close();
+            if (formASerAberto == null)
+                return;
+
+            // Configurações do Form 
+            formASerAberto.TopLevel = false;
+            formASerAberto.FormBorderStyle = FormBorderStyle.None;
+            formASerAberto.Dock = DockStyle.Fill;
+            pnlMainForm.Controls.Add(formASerAberto);
+            formASerAberto.BackColor = pnlMainForm.BackColor;
+
+
+            formASerAberto.BringToFront();
+            formASerAberto.Show();
+            formAberto = formASerAberto;
+        }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frSobre());
+        }
+
+        private void btnCadMarca_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroMarca());
         }
     }
 }

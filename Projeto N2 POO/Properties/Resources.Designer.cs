@@ -113,6 +113,16 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CheckIcon {
+            get {
+                object obj = ResourceManager.GetObject("CheckIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configu {
             get {
                 object obj = ResourceManager.GetObject("configu", resourceCulture);
@@ -203,6 +213,16 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_save_3325027 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_save_3325027", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_truck_3325158 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_truck_3325158", resourceCulture);
@@ -256,6 +276,16 @@ namespace Projeto_N2_POO.Properties {
         internal static System.Drawing.Bitmap sobre {
             get {
                 object obj = ResourceManager.GetObject("sobre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UncheckIcon {
+            get {
+                object obj = ResourceManager.GetObject("UncheckIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

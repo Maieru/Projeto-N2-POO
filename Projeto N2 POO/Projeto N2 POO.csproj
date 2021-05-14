@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,11 +50,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Carro.cs" />
+    <Compile Include="Classes\Dados.cs" />
     <Compile Include="Classes\Marca.cs" />
     <Compile Include="Classes\Modelo.cs" />
     <Compile Include="Classes\Moto.cs" />
     <Compile Include="Classes\Pedagio.cs" />
     <Compile Include="Classes\VeiculoBase.cs" />
+    <Compile Include="Enumeradores\EnumTipoVeiculo.cs" />
+    <Compile Include="Forms\frCadastroMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroMarca.Designer.cs">
+      <DependentUpon>frCadastroMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frSobre.Designer.cs">
+      <DependentUpon>frSobre.cs</DependentUpon>
+    </Compile>
     <Compile Include="frMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +84,30 @@
     <Compile Include="Interfaces\IVeiculoVoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\ucCheckAndUncheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucCheckAndUncheck.Designer.cs">
+      <DependentUpon>ucCheckAndUncheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucLabelETextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucLabelETextbox.Designer.cs">
+      <DependentUpon>ucLabelETextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucSeletorDeTipos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucSeletorDeTipos.Designer.cs">
+      <DependentUpon>ucSeletorDeTipos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\frCadastroMarca.resx">
+      <DependentUpon>frCadastroMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frSobre.resx">
+      <DependentUpon>frSobre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frMain.resx">
       <DependentUpon>frMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +121,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User Controls\ucCheckAndUncheck.resx">
+      <DependentUpon>ucCheckAndUncheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucLabelETextbox.resx">
+      <DependentUpon>ucLabelETextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucSeletorDeTipos.resx">
+      <DependentUpon>ucSeletorDeTipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,7 +145,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="User Controls\" />
+    <None Include="Resources\CheckIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_Adventure-Line-23_3687823.png" />
@@ -158,6 +209,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\configu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UncheckIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_save_3325027.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
