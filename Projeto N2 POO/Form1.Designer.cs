@@ -467,6 +467,7 @@ namespace Projeto_N2_POO
             this.btnCadModelo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadModelo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadModelo.UseVisualStyleBackColor = false;
+            this.btnCadModelo.Click += new System.EventHandler(this.btnCadModelo_Click);
             // 
             // btnCadMarca
             // 

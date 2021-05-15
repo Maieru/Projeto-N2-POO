@@ -1,7 +1,7 @@
 ﻿
 namespace Projeto_N2_POO.Forms
 {
-    partial class frCadastroMarca
+    partial class frCadastroDeModelo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,29 +29,12 @@ namespace Projeto_N2_POO.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.grpVeiculos = new System.Windows.Forms.GroupBox();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbmMarca = new System.Windows.Forms.ComboBox();
             this.ucCodigo = new Projeto_N2_POO.User_Controls.ucLabelETextbox();
             this.ucDescricao = new Projeto_N2_POO.User_Controls.ucLabelETextbox();
-            this.ucSeletorDeTipos = new Projeto_N2_POO.User_Controls.ucSeletorDeTipos();
-            this.ucCheckAndUncheck1 = new Projeto_N2_POO.User_Controls.ucCheckAndUncheck();
-            this.grpVeiculos.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // grpVeiculos
-            // 
-            this.grpVeiculos.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.grpVeiculos.Controls.Add(this.ucSeletorDeTipos);
-            this.grpVeiculos.Controls.Add(this.ucCheckAndUncheck1);
-            this.grpVeiculos.ForeColor = System.Drawing.Color.White;
-            this.grpVeiculos.Location = new System.Drawing.Point(288, 101);
-            this.grpVeiculos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpVeiculos.Name = "grpVeiculos";
-            this.grpVeiculos.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grpVeiculos.Size = new System.Drawing.Size(275, 298);
-            this.grpVeiculos.TabIndex = 2;
-            this.grpVeiculos.TabStop = false;
-            this.grpVeiculos.Text = "Tipo de Veiculos Manufaturados";
             // 
             // btnSalvar
             // 
@@ -64,14 +47,36 @@ namespace Projeto_N2_POO.Forms
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
             this.btnSalvar.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_save_3325027;
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalvar.Location = new System.Drawing.Point(36, 343);
+            this.btnSalvar.Location = new System.Drawing.Point(186, 369);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(203, 35);
-            this.btnSalvar.TabIndex = 5;
+            this.btnSalvar.Size = new System.Drawing.Size(203, 46);
+            this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(186, 264);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 19);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Marca:";
+            // 
+            // cbmMarca
+            // 
+            this.cbmMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbmMarca.BackColor = System.Drawing.Color.White;
+            this.cbmMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbmMarca.FormattingEnabled = true;
+            this.cbmMarca.Location = new System.Drawing.Point(186, 287);
+            this.cbmMarca.Name = "cbmMarca";
+            this.cbmMarca.Size = new System.Drawing.Size(203, 25);
+            this.cbmMarca.TabIndex = 10;
             // 
             // ucCodigo
             // 
@@ -79,11 +84,11 @@ namespace Projeto_N2_POO.Forms
             this.ucCodigo.BackColor = System.Drawing.Color.Transparent;
             this.ucCodigo.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
             this.ucCodigo.ForeColor = System.Drawing.Color.White;
-            this.ucCodigo.Location = new System.Drawing.Point(36, 232);
+            this.ucCodigo.Location = new System.Drawing.Point(186, 168);
             this.ucCodigo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ucCodigo.Name = "ucCodigo";
             this.ucCodigo.Size = new System.Drawing.Size(203, 50);
-            this.ucCodigo.TabIndex = 4;
+            this.ucCodigo.TabIndex = 12;
             this.ucCodigo.TextoDaLabel = "Código";
             this.ucCodigo.TextoDaTextBox = "";
             // 
@@ -93,63 +98,42 @@ namespace Projeto_N2_POO.Forms
             this.ucDescricao.BackColor = System.Drawing.Color.Transparent;
             this.ucDescricao.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
             this.ucDescricao.ForeColor = System.Drawing.Color.White;
-            this.ucDescricao.Location = new System.Drawing.Point(36, 121);
+            this.ucDescricao.Location = new System.Drawing.Point(186, 73);
             this.ucDescricao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ucDescricao.Name = "ucDescricao";
             this.ucDescricao.Size = new System.Drawing.Size(203, 50);
-            this.ucDescricao.TabIndex = 3;
+            this.ucDescricao.TabIndex = 11;
             this.ucDescricao.TextoDaLabel = "Descrição";
             this.ucDescricao.TextoDaTextBox = "";
             // 
-            // ucSeletorDeTipos
-            // 
-            this.ucSeletorDeTipos.BackColor = System.Drawing.Color.Transparent;
-            this.ucSeletorDeTipos.Location = new System.Drawing.Point(10, 26);
-            this.ucSeletorDeTipos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucSeletorDeTipos.MaximumSize = new System.Drawing.Size(251, 196);
-            this.ucSeletorDeTipos.MinimumSize = new System.Drawing.Size(251, 196);
-            this.ucSeletorDeTipos.Name = "ucSeletorDeTipos";
-            this.ucSeletorDeTipos.Size = new System.Drawing.Size(251, 196);
-            this.ucSeletorDeTipos.TabIndex = 4;
-            // 
-            // ucCheckAndUncheck1
-            // 
-            this.ucCheckAndUncheck1.BackColor = System.Drawing.Color.Transparent;
-            this.ucCheckAndUncheck1.ControleComandado = this.grpVeiculos;
-            this.ucCheckAndUncheck1.Location = new System.Drawing.Point(62, 215);
-            this.ucCheckAndUncheck1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucCheckAndUncheck1.Name = "ucCheckAndUncheck1";
-            this.ucCheckAndUncheck1.Size = new System.Drawing.Size(148, 78);
-            this.ucCheckAndUncheck1.TabIndex = 3;
-            // 
-            // frCadastroMarca
+            // frCadastroDeModelo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(135)))));
             this.ClientSize = new System.Drawing.Size(575, 500);
-            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.ucCodigo);
             this.Controls.Add(this.ucDescricao);
-            this.Controls.Add(this.grpVeiculos);
+            this.Controls.Add(this.cbmMarca);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnSalvar);
             this.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "frCadastroMarca";
-            this.Text = "frCadastroMarca";
-            this.grpVeiculos.ResumeLayout(false);
+            this.Name = "frCadastroDeModelo";
+            this.Text = "frCadastroDeModelo";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grpVeiculos;
-        private User_Controls.ucCheckAndUncheck ucCheckAndUncheck1;
-        private User_Controls.ucSeletorDeTipos ucSeletorDeTipos;
-        private User_Controls.ucLabelETextbox ucDescricao;
-        private User_Controls.ucLabelETextbox ucCodigo;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbmMarca;
+        private User_Controls.ucLabelETextbox ucCodigo;
+        private User_Controls.ucLabelETextbox ucDescricao;
     }
 }

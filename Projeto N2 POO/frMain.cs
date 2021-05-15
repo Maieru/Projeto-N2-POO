@@ -21,6 +21,7 @@ namespace Projeto_N2_POO
             InitializeComponent();
 
             Dados.LerMarcas();
+            Dados.LerModelo();
         }
 
         private void btnAbriMenuCadastro_Click(object sender, EventArgs e)
@@ -30,7 +31,6 @@ namespace Projeto_N2_POO
             else
                 pnlCadastro.Visible = true;
         }
-
         private void btnGerencia_Click(object sender, EventArgs e)
         {
             if (pnlGerencia.Visible)
@@ -38,7 +38,6 @@ namespace Projeto_N2_POO
             else
                 pnlGerencia.Visible = true;
         }
-
         private void AbrirForm(Form formASerAberto)
         {
             if (formAberto != null)
@@ -58,15 +57,17 @@ namespace Projeto_N2_POO
             formASerAberto.Show();
             formAberto = formASerAberto;
         }
-
         private void btnSobre_Click(object sender, EventArgs e)
         {
             AbrirForm(new frSobre());
         }
-
         private void btnCadMarca_Click(object sender, EventArgs e)
         {
             AbrirForm(new frCadastroMarca());
+        }
+        private void btnCadModelo_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroDeModelo());
         }
     }
 }

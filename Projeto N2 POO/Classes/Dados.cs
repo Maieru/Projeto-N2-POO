@@ -11,6 +11,7 @@ namespace Projeto_N2_POO.Classes
     static class Dados
     {
         public static List<Marca> Marcas { get; private set; }
+        public static List<Modelo> Modelos { get; private set; }
 
         public static void LerMarcas()
         {
@@ -34,6 +35,30 @@ namespace Projeto_N2_POO.Classes
         {
             Marcas.Add(marca);
             SalvarMarcas();
+        }
+
+        public static void LerModelo()
+        {
+            if (File.Exists("modelos.json"))
+            {
+                string conteudo = File.ReadAllText("modelos.json", Encoding.UTF8);
+                JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+                Modelos = JsonConvert.DeserializeObject<List<Modelo>>(conteudo, settings);
+            }
+            else
+                Modelos = new List<Modelo>();
+        }
+        public static void SalvarModelos()
+        {
+            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            string conteudo = JsonConvert.SerializeObject(Modelos, settings);
+
+            File.WriteAllText("modelos.json", conteudo, Encoding.UTF8);
+        }
+        public static void AdicionarModelo(Modelo modelo)
+        {
+            Modelos.Add(modelo);
+            SalvarModelos();
         }
     }
 }

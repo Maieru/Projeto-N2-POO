@@ -33,6 +33,17 @@ namespace Projeto_N2_POO.Classes
         }
         public Marca Marca { get; set; }
 
+        /// <summary>
+        /// Método que retorna as propriedades da classe como string.
+        /// </summary>
+        /// <returns>Os atributos da classe, na seguinte ordem: 
+        /// Codigo|Descrição|Codigo da Marca|Descrição da Marca|Tipos Produzidos</returns>
+        public override string ToString()
+        {
+            return "Codigo: " + Codigo + "|" + "Descrição: " + Descricao + "|" +
+                   Marca.ToString();
+        }
+
         public Modelo(int codigo, string descricao, Marca marca)
         {
             Codigo = codigo;

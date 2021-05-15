@@ -63,6 +63,16 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3c973589_56f0_4ee0_a90a_846b26a31588 {
+            get {
+                object obj = ResourceManager.GetObject("3c973589-56f0-4ee0-a90a-846b26a31588", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aviao_voando {
             get {
                 object obj = ResourceManager.GetObject("aviao-voando", resourceCulture);
