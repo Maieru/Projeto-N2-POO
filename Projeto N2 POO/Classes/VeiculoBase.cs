@@ -33,7 +33,7 @@ namespace Projeto_N2_POO.Classes
             }
         }
 
-        public void Acelera() => Velocidade++;
+        public virtual void Acelera() => Velocidade++;
         public void Desacelera() => Velocidade--;
 
         public override string ToString() {
