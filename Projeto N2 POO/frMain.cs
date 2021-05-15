@@ -22,6 +22,7 @@ namespace Projeto_N2_POO
 
             Dados.LerMarcas();
             Dados.LerModelo();
+            Dados.LerPedagio();
         }
 
         private void btnAbriMenuCadastro_Click(object sender, EventArgs e)
@@ -68,6 +69,17 @@ namespace Projeto_N2_POO
         private void btnCadModelo_Click(object sender, EventArgs e)
         {
             AbrirForm(new frCadastroDeModelo());
+        }
+        private void btnCadSemaforo_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroPedagio());
+        }
+
+        private void btnCadAviao_Click(object sender, EventArgs e)
+        {
+            Aviao a = new Aviao();
+            AviaoDeGuerra g = new AviaoDeGuerra();
+            
         }
     }
 }

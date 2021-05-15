@@ -49,12 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Aviao.cs" />
+    <Compile Include="Classes\AviaoDeGuerra.cs" />
+    <Compile Include="Classes\Caminhao.cs" />
     <Compile Include="Classes\Carro.cs" />
     <Compile Include="Classes\Dados.cs" />
     <Compile Include="Classes\Marca.cs" />
     <Compile Include="Classes\Modelo.cs" />
     <Compile Include="Classes\Moto.cs" />
     <Compile Include="Classes\Pedagio.cs" />
+    <Compile Include="Classes\VeiculoAereoBase.cs" />
     <Compile Include="Classes\VeiculoBase.cs" />
     <Compile Include="Enumeradores\EnumTipoVeiculo.cs" />
     <Compile Include="Forms\frBase.cs">
@@ -100,6 +104,7 @@
     <Compile Include="Interfaces\IVeiculoPagaPedagio.cs" />
     <Compile Include="Interfaces\IVeiculoPossuiPassageiro.cs" />
     <Compile Include="Interfaces\IVeiculoVoa.cs" />
+    <Compile Include="Interfaces\IVeiculoEjetavel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User Controls\ucCheckAndUncheck.cs">
@@ -242,6 +247,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_save_3325027.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

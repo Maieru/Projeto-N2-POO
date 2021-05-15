@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Projeto_N2_POO.Forms
 {
-    public partial class frCadastroMarca : Form
+    public partial class frCadastroMarca : frBase
     {
         public frCadastroMarca()
         {
@@ -25,6 +25,9 @@ namespace Projeto_N2_POO.Forms
                 Dados.AdicionarMarca(new Marca(Convert.ToInt32(ucCodigo.TextoDaTextBox),
                                                ucDescricao.TextoDaTextBox,
                                                ucSeletorDeTipos.TiposMarcados));
+                ucDescricao.TextoDaTextBox = "";
+                ucCodigo.TextoDaTextBox = "";
+                ucMarcador.AlterarCheckbox(false);
             }
             catch (Exception erro)
             {
