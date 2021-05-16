@@ -32,7 +32,7 @@ namespace Projeto_N2_POO.Classes
                 localizacao = value;
             }
         }
-        public double TotalRecebidoDePedagios { get; private set; } = 0;
+        public double TotalRecebidoDePedagios { get; private set; }
 
         public string Receber(IVeiculoPagaPedagio veiculo)
         {
@@ -45,12 +45,6 @@ namespace Projeto_N2_POO.Classes
             return "Nome: " + Identificacao + 
                    "|Localização: " + Localizacao +
                    "|Total recebido: " + TotalRecebidoDePedagios;
-        }
-
-        public Pedagio(string identificacao, string localizacao)
-        {
-            Identificacao = identificacao;
-            Localizacao = localizacao;
         }
     }
 }

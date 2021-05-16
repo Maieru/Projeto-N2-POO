@@ -37,6 +37,5 @@ namespace Projeto_N2_POO.User_Controls
                     (control as CheckBox).Checked = marcado;
             }
         }
-        public void AlterarCheckbox(bool marcado) => AlterarCheckbox(ControleComandado.Controls, marcado);
     }
 }

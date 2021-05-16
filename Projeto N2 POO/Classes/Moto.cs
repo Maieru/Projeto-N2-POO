@@ -11,7 +11,7 @@ namespace Projeto_N2_POO.Classes
     {
         public int CapacidadeDePassageiro { get; set; }
 
-        public string Empinar() => "A moto " + Modelo + "está empinando.";
+        public string Empinar() => "Empinando.";
         public double PagarPedagio() => 3;
     }
 }

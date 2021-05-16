@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Projeto_N2_POO.Forms
 {
-    public partial class frCadastroDeModelo : frBase
+    public partial class frCadastroDeModelo : Form
     {
         public frCadastroDeModelo()
         {
@@ -28,9 +28,6 @@ namespace Projeto_N2_POO.Forms
                 Dados.AdicionarModelo(new Modelo(Convert.ToInt32(ucCodigo.TextoDaTextBox),
                                                ucDescricao.TextoDaTextBox,
                                                cbmMarca.SelectedItem as Marca));
-
-                ucCodigo.TextoDaTextBox = "";
-                ucDescricao.TextoDaTextBox = "";
             }
             catch (Exception erro)
             {

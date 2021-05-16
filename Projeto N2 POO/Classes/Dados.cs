@@ -12,7 +12,6 @@ namespace Projeto_N2_POO.Classes
     {
         public static List<Marca> Marcas { get; private set; }
         public static List<Modelo> Modelos { get; private set; }
-        public static List<Pedagio> Pedagios { get; private set; }
 
         public static void LerMarcas()
         {
@@ -34,10 +33,6 @@ namespace Projeto_N2_POO.Classes
         }
         public static void AdicionarMarca(Marca marca)
         {
-            foreach (Marca marcaSalva in Marcas)
-                if (marcaSalva.Codigo == marca.Codigo)
-                    throw new Exception("O código utilizado nessa marca já foi cadastrado.");
-
             Marcas.Add(marca);
             SalvarMarcas();
         }
@@ -62,40 +57,8 @@ namespace Projeto_N2_POO.Classes
         }
         public static void AdicionarModelo(Modelo modelo)
         {
-            foreach (Modelo modeloSalvo in Modelos)
-                if (modeloSalvo.Codigo == modelo.Codigo && modeloSalvo.Marca.Codigo == modelo.Marca.Codigo)
-                    throw new Exception("O código utilizado nesse modelo já foi cadastrado.");
-
             Modelos.Add(modelo);
             SalvarModelos();
-        }
-
-        public static void LerPedagio()
-        {
-            if (File.Exists("pedagios.json"))
-            {
-                string conteudo = File.ReadAllText("pedagios.json", Encoding.UTF8);
-                JsonSerializerSettings settings = new JsonSerializerSettings{ TypeNameHandling = TypeNameHandling.All};
-                Pedagios = JsonConvert.DeserializeObject<List<Pedagio>>(conteudo, settings);
-            }
-            else
-                Pedagios = new List<Pedagio>();
-        }
-        public static void SalvarPedagios()
-        {
-            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
-            string conteudo = JsonConvert.SerializeObject(Pedagios, settings);
-
-            File.WriteAllText("pedagios.json", conteudo, Encoding.UTF8);
-        }
-        public static void AdicionarPedagio(Pedagio pedagio)
-        {
-            foreach (Pedagio pedagioSalvo in Pedagios)
-                if (pedagioSalvo.Identificacao == pedagio.Identificacao)
-                    throw new Exception("A identificação desse pedágio já foi cadastrada.");
-
-            Pedagios.Add(pedagio);
-            SalvarPedagios();
         }
     }
 }

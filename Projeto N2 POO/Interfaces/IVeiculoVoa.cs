@@ -8,10 +8,6 @@ namespace Projeto_N2_POO.Interfaces
 {
     interface IVeiculoVoa
     {
-        /// <summary>
-        /// Métodos comuns dos veículos aéreos
-        /// </summary>
-        /// <returns></returns>
         void Pousar();
         void Arremeter();
         void Decolar();

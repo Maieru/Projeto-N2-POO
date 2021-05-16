@@ -273,16 +273,6 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Sem_título {
-            get {
-                object obj = ResourceManager.GetObject("Sem título", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap semaforo {
             get {
                 object obj = ResourceManager.GetObject("semaforo", resourceCulture);
