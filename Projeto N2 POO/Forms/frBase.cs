@@ -16,5 +16,17 @@ namespace Projeto_N2_POO.Forms
         {
             InitializeComponent();
         }
+        public void LimpaCampos(Control.ControlCollection controles)
+        {
+            foreach (Control control in controles)
+            {
+                if (control is TextBox)
+                    control.Text = "";
+                if (control is NumericUpDown)
+                    (control as NumericUpDown).Value = 0; 
+                if (control is Panel || control is GroupBox || control is UserControl)
+                    LimpaCampos(control.Controls);
+            }
+        }
     }
 }

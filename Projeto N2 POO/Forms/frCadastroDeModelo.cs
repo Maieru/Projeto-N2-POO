@@ -1,4 +1,5 @@
 ﻿using Projeto_N2_POO.Classes;
+using Projeto_N2_POO.Enumeradores;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,8 @@ namespace Projeto_N2_POO.Forms
 
             cbmMarca.DataSource = Dados.Marcas;
             cbmMarca.DisplayMember = "Descricao";
+
+            cbmTipoVeiculo.DataSource = (cbmMarca.SelectedItem as Marca).TiposProduzidos;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -27,16 +30,20 @@ namespace Projeto_N2_POO.Forms
             {
                 Dados.AdicionarModelo(new Modelo(Convert.ToInt32(ucCodigo.TextoDaTextBox),
                                                ucDescricao.TextoDaTextBox,
-                                               cbmMarca.SelectedItem as Marca));
+                                               cbmMarca.SelectedItem as Marca,
+                                               (EnumTipoVeiculo)cbmTipoVeiculo.SelectedItem));
 
-                ucCodigo.TextoDaTextBox = "";
-                ucDescricao.TextoDaTextBox = "";
+                LimpaCampos(Controls);
             }
             catch (Exception erro)
             {
                 MessageBox.Show(erro.Message, "Erro !", MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);
             }
+        }
+        private void cbmMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbmTipoVeiculo.DataSource = (cbmMarca.SelectedItem as Marca).TiposProduzidos;
         }
     }
 }

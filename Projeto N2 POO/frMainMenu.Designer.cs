@@ -1,7 +1,7 @@
 ﻿
 namespace Projeto_N2_POO
 {
-    partial class frMain
+    partial class frMainMenu
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -39,7 +39,6 @@ namespace Projeto_N2_POO
             this.pnlMainForm = new System.Windows.Forms.Panel();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnConfig = new System.Windows.Forms.Button();
-            this.btnGenNavioDeGuerra = new System.Windows.Forms.Button();
             this.btnGenNavio = new System.Windows.Forms.Button();
             this.btnGenTrem = new System.Windows.Forms.Button();
             this.btnGenAviaoDeGuerra = new System.Windows.Forms.Button();
@@ -62,6 +61,10 @@ namespace Projeto_N2_POO
             this.btnCadCaminhao = new System.Windows.Forms.Button();
             this.btnCadCarro = new System.Windows.Forms.Button();
             this.btnMenuCadastro = new System.Windows.Forms.Button();
+            this.btnGenNavioDeGuerra = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.pnlGerencia.SuspendLayout();
             this.pnlCadastro.SuspendLayout();
@@ -94,7 +97,7 @@ namespace Projeto_N2_POO
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 925);
+            this.panel5.Location = new System.Drawing.Point(0, 1030);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(208, 20);
             this.panel5.TabIndex = 9;
@@ -102,6 +105,9 @@ namespace Projeto_N2_POO
             // pnlGerencia
             // 
             this.pnlGerencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pnlGerencia.Controls.Add(this.button3);
+            this.pnlGerencia.Controls.Add(this.button2);
+            this.pnlGerencia.Controls.Add(this.button1);
             this.pnlGerencia.Controls.Add(this.btnGenNavioDeGuerra);
             this.pnlGerencia.Controls.Add(this.btnGenNavio);
             this.pnlGerencia.Controls.Add(this.btnGenTrem);
@@ -114,7 +120,7 @@ namespace Projeto_N2_POO
             this.pnlGerencia.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlGerencia.Location = new System.Drawing.Point(0, 610);
             this.pnlGerencia.Name = "pnlGerencia";
-            this.pnlGerencia.Size = new System.Drawing.Size(208, 315);
+            this.pnlGerencia.Size = new System.Drawing.Size(208, 420);
             this.pnlGerencia.TabIndex = 8;
             this.pnlGerencia.Visible = false;
             // 
@@ -183,7 +189,7 @@ namespace Projeto_N2_POO
             this.btnSobre.ForeColor = System.Drawing.Color.White;
             this.btnSobre.Image = global::Projeto_N2_POO.Properties.Resources.sobre;
             this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSobre.Location = new System.Drawing.Point(0, 980);
+            this.btnSobre.Location = new System.Drawing.Point(0, 1085);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSobre.Size = new System.Drawing.Size(208, 35);
@@ -205,7 +211,7 @@ namespace Projeto_N2_POO
             this.btnConfig.ForeColor = System.Drawing.Color.White;
             this.btnConfig.Image = global::Projeto_N2_POO.Properties.Resources.configu;
             this.btnConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfig.Location = new System.Drawing.Point(0, 945);
+            this.btnConfig.Location = new System.Drawing.Point(0, 1050);
             this.btnConfig.Name = "btnConfig";
             this.btnConfig.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnConfig.Size = new System.Drawing.Size(208, 35);
@@ -214,27 +220,6 @@ namespace Projeto_N2_POO
             this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfig.UseVisualStyleBackColor = false;
-            // 
-            // btnGenNavioDeGuerra
-            // 
-            this.btnGenNavioDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.btnGenNavioDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGenNavioDeGuerra.FlatAppearance.BorderSize = 0;
-            this.btnGenNavioDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.btnGenNavioDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenNavioDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenNavioDeGuerra.ForeColor = System.Drawing.Color.White;
-            this.btnGenNavioDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
-            this.btnGenNavioDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenNavioDeGuerra.Location = new System.Drawing.Point(0, 280);
-            this.btnGenNavioDeGuerra.Name = "btnGenNavioDeGuerra";
-            this.btnGenNavioDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnGenNavioDeGuerra.Size = new System.Drawing.Size(208, 35);
-            this.btnGenNavioDeGuerra.TabIndex = 9;
-            this.btnGenNavioDeGuerra.Text = "Navio de Guerra";
-            this.btnGenNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGenNavioDeGuerra.UseVisualStyleBackColor = false;
             // 
             // btnGenNavio
             // 
@@ -596,6 +581,7 @@ namespace Projeto_N2_POO
             this.btnCadAviao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadAviao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadAviao.UseVisualStyleBackColor = false;
+            this.btnCadAviao.Click += new System.EventHandler(this.btnCadAviao_Click);
             // 
             // btnCadMoto
             // 
@@ -617,6 +603,7 @@ namespace Projeto_N2_POO
             this.btnCadMoto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadMoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadMoto.UseVisualStyleBackColor = false;
+            this.btnCadMoto.Click += new System.EventHandler(this.btnCadMoto_Click);
             // 
             // btnCadOnibus
             // 
@@ -638,6 +625,7 @@ namespace Projeto_N2_POO
             this.btnCadOnibus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadOnibus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadOnibus.UseVisualStyleBackColor = false;
+            this.btnCadOnibus.Click += new System.EventHandler(this.btnCadOnibus_Click);
             // 
             // btnCadCaminhao
             // 
@@ -659,6 +647,7 @@ namespace Projeto_N2_POO
             this.btnCadCaminhao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadCaminhao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadCaminhao.UseVisualStyleBackColor = false;
+            this.btnCadCaminhao.Click += new System.EventHandler(this.btnCadCaminhao_Click);
             // 
             // btnCadCarro
             // 
@@ -680,6 +669,7 @@ namespace Projeto_N2_POO
             this.btnCadCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadCarro.UseVisualStyleBackColor = false;
+            this.btnCadCarro.Click += new System.EventHandler(this.btnCadCarro_Click);
             // 
             // btnMenuCadastro
             // 
@@ -703,7 +693,91 @@ namespace Projeto_N2_POO
             this.btnMenuCadastro.UseVisualStyleBackColor = false;
             this.btnMenuCadastro.Click += new System.EventHandler(this.btnAbriMenuCadastro_Click);
             // 
-            // frMain
+            // btnGenNavioDeGuerra
+            // 
+            this.btnGenNavioDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenNavioDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenNavioDeGuerra.FlatAppearance.BorderSize = 0;
+            this.btnGenNavioDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenNavioDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenNavioDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenNavioDeGuerra.ForeColor = System.Drawing.Color.White;
+            this.btnGenNavioDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
+            this.btnGenNavioDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavioDeGuerra.Location = new System.Drawing.Point(0, 280);
+            this.btnGenNavioDeGuerra.Name = "btnGenNavioDeGuerra";
+            this.btnGenNavioDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenNavioDeGuerra.Size = new System.Drawing.Size(208, 35);
+            this.btnGenNavioDeGuerra.TabIndex = 10;
+            this.btnGenNavioDeGuerra.Text = "Navio de Guerra";
+            this.btnGenNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenNavioDeGuerra.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Projeto_N2_POO.Properties.Resources.brand1;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 315);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(208, 35);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Marca";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Projeto_N2_POO.Properties.Resources.modelo_3d;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 350);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(208, 35);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Modelo";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::Projeto_N2_POO.Properties.Resources.Sem_título;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 385);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(208, 35);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Pedagio";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // frMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -712,7 +786,7 @@ namespace Projeto_N2_POO
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.MinimumSize = new System.Drawing.Size(800, 500);
-            this.Name = "frMain";
+            this.Name = "frMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
@@ -742,7 +816,6 @@ namespace Projeto_N2_POO
         private System.Windows.Forms.Button btnCadModelo;
         private System.Windows.Forms.Button btnCadMarca;
         private System.Windows.Forms.Panel pnlGerencia;
-        private System.Windows.Forms.Button btnGenNavioDeGuerra;
         private System.Windows.Forms.Button btnGenNavio;
         private System.Windows.Forms.Button btnGenTrem;
         private System.Windows.Forms.Button btnGenAviaoDeGuerra;
@@ -757,6 +830,9 @@ namespace Projeto_N2_POO
         private System.Windows.Forms.Button btnSobre;
         private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Panel pnlMainForm;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGenNavioDeGuerra;
     }
 }
-

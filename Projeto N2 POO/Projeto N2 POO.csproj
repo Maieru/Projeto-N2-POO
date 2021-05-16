@@ -49,20 +49,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Caminhao.cs" />
-    <Compile Include="Classes\Carro.cs" />
+    <Compile Include="Classes\VeiculoAviao.cs" />
+    <Compile Include="Classes\VeiculoCaminhao.cs" />
+    <Compile Include="Classes\VeiculoCarro.cs" />
     <Compile Include="Classes\Dados.cs" />
     <Compile Include="Classes\Marca.cs" />
     <Compile Include="Classes\Modelo.cs" />
-    <Compile Include="Classes\Moto.cs" />
+    <Compile Include="Classes\VeiculoMoto.cs" />
+    <Compile Include="Classes\VeiculoOnibus.cs" />
     <Compile Include="Classes\Pedagio.cs" />
     <Compile Include="Classes\VeiculoBase.cs" />
+    <Compile Include="Classes\VeiculoBaseComPassageiro.cs" />
     <Compile Include="Enumeradores\EnumTipoVeiculo.cs" />
     <Compile Include="Forms\frBase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frBase.Designer.cs">
       <DependentUpon>frBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCadastroAviao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroAviao.Designer.cs">
+      <DependentUpon>frCadastroAviao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCadastroCaminhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroCaminhao.Designer.cs">
+      <DependentUpon>frCadastroCaminhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCadastroCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroCarro.Designer.cs">
+      <DependentUpon>frCadastroCarro.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frCadastroDeModelo.cs">
       <SubType>Form</SubType>
@@ -76,6 +97,18 @@
     <Compile Include="Forms\frCadastroMarca.Designer.cs">
       <DependentUpon>frCadastroMarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frCadastroMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroMoto.Designer.cs">
+      <DependentUpon>frCadastroMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCadastroOnibus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroOnibus.Designer.cs">
+      <DependentUpon>frCadastroOnibus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frCadastroPedagio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +121,11 @@
     <Compile Include="Forms\frSobre.Designer.cs">
       <DependentUpon>frSobre.cs</DependentUpon>
     </Compile>
-    <Compile Include="frMain.cs">
+    <Compile Include="frMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>frMain.cs</DependentUpon>
+    <Compile Include="frMainMenu.Designer.cs">
+      <DependentUpon>frMainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IVeiculoComEixos.cs" />
     <Compile Include="Interfaces\IVeiculoComLimpador.cs" />
@@ -124,11 +157,26 @@
     <EmbeddedResource Include="Forms\frBase.resx">
       <DependentUpon>frBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroAviao.resx">
+      <DependentUpon>frCadastroAviao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroCaminhao.resx">
+      <DependentUpon>frCadastroCaminhao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroCarro.resx">
+      <DependentUpon>frCadastroCarro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroDeModelo.resx">
       <DependentUpon>frCadastroDeModelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroMarca.resx">
       <DependentUpon>frCadastroMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroMoto.resx">
+      <DependentUpon>frCadastroMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroOnibus.resx">
+      <DependentUpon>frCadastroOnibus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroPedagio.resx">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
@@ -136,8 +184,8 @@
     <EmbeddedResource Include="Forms\frSobre.resx">
       <DependentUpon>frSobre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frMain.resx">
-      <DependentUpon>frMain.cs</DependentUpon>
+    <EmbeddedResource Include="frMainMenu.resx">
+      <DependentUpon>frMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

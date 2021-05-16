@@ -27,6 +27,8 @@ namespace Projeto_N2_POO.Forms
 
                 ucIdentificacao.TextoDaTextBox = "";
                 ucLocalizacao.TextoDaTextBox = "";
+
+                LimpaCampos(Controls);
             }
             catch (Exception erro)
             {

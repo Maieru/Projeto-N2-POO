@@ -13,6 +13,7 @@ namespace Projeto_N2_POO.Classes
         public static List<Marca> Marcas { get; private set; }
         public static List<Modelo> Modelos { get; private set; }
         public static List<Pedagio> Pedagios { get; private set; }
+        public static List<VeiculoBase> Veiculos { get; private set; }
 
         public static void LerMarcas()
         {
@@ -96,6 +97,34 @@ namespace Projeto_N2_POO.Classes
 
             Pedagios.Add(pedagio);
             SalvarPedagios();
+        }
+
+        public static void LerVeiculo()
+        {
+            if (File.Exists("veiculos.json"))
+            {
+                string conteudo = File.ReadAllText("veiculos.json", Encoding.UTF8);
+                JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+                Veiculos = JsonConvert.DeserializeObject<List<VeiculoBase>>(conteudo, settings);
+            }
+            else
+                Veiculos = new List<VeiculoBase>();
+        }
+        public static void SalvarVeiculos()
+        {
+            JsonSerializerSettings settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All };
+            string conteudo = JsonConvert.SerializeObject(Veiculos, settings);
+
+            File.WriteAllText("veiculos.json", conteudo, Encoding.UTF8);
+        }
+        public static void AdicionarVeiculo(VeiculoBase veiculo)
+        {
+            foreach (VeiculoBase veiculoSalvo in Veiculos)
+                if (veiculoSalvo.Identificacao == veiculo.Identificacao)
+                    throw new Exception("A identificação desse veiculo já foi cadastrada.");
+
+            Veiculos.Add(veiculo);
+            SalvarVeiculos();
         }
     }
 }
