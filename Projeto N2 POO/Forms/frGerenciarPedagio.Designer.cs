@@ -29,47 +29,50 @@ namespace Projeto_N2_POO.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucQtdCadastrado = new Projeto_N2_POO.User_Controls.ucLabelComTextoVariavel();
-            this.ucValorTotalRecebido = new Projeto_N2_POO.User_Controls.ucLabelComTextoVariavel();
+            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnProximo = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.ucValorArrecadado = new Projeto_N2_POO.User_Controls.ucLabelComTextoVariavel();
             this.ucLocalizacao = new Projeto_N2_POO.User_Controls.ucLabelComTextoVariavel();
             this.ucIdentificacao = new Projeto_N2_POO.User_Controls.ucLabelComTextoVariavel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtPesquisa = new System.Windows.Forms.TextBox();
-            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.ucValorTotalRecebido = new Projeto_N2_POO.User_Controls.ucLabelComTextoVariavel();
+            this.ucQtdCadastrado = new Projeto_N2_POO.User_Controls.ucLabelComTextoVariavel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ucQtdCadastrado
+            // btnPesquisa
             // 
-            this.ucQtdCadastrado.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ucQtdCadastrado.BackColor = System.Drawing.Color.Transparent;
-            this.ucQtdCadastrado.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
-            this.ucQtdCadastrado.ForeColor = System.Drawing.Color.White;
-            this.ucQtdCadastrado.Location = new System.Drawing.Point(125, 36);
-            this.ucQtdCadastrado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucQtdCadastrado.Name = "ucQtdCadastrado";
-            this.ucQtdCadastrado.Size = new System.Drawing.Size(324, 22);
-            this.ucQtdCadastrado.TabIndex = 0;
-            this.ucQtdCadastrado.TextoLabel1 = "Quantidade de Pedagios Cadastrados: ";
-            this.ucQtdCadastrado.TextoLabel2 = "label1";
+            this.btnPesquisa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPesquisa.FlatAppearance.BorderSize = 0;
+            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisa.Image = global::Projeto_N2_POO.Properties.Resources.Lupa;
+            this.btnPesquisa.Location = new System.Drawing.Point(473, 112);
+            this.btnPesquisa.Name = "btnPesquisa";
+            this.btnPesquisa.Size = new System.Drawing.Size(30, 30);
+            this.btnPesquisa.TabIndex = 5;
+            this.btnPesquisa.UseVisualStyleBackColor = true;
+            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
             // 
-            // ucValorTotalRecebido
+            // txtPesquisa
             // 
-            this.ucValorTotalRecebido.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ucValorTotalRecebido.BackColor = System.Drawing.Color.Transparent;
-            this.ucValorTotalRecebido.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
-            this.ucValorTotalRecebido.ForeColor = System.Drawing.Color.White;
-            this.ucValorTotalRecebido.Location = new System.Drawing.Point(125, 76);
-            this.ucValorTotalRecebido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ucValorTotalRecebido.Name = "ucValorTotalRecebido";
-            this.ucValorTotalRecebido.Size = new System.Drawing.Size(324, 22);
-            this.ucValorTotalRecebido.TabIndex = 1;
-            this.ucValorTotalRecebido.TextoLabel1 = "Quantidade Total de Valor Recebido:";
-            this.ucValorTotalRecebido.TextoLabel2 = "label1";
+            this.txtPesquisa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPesquisa.Location = new System.Drawing.Point(240, 116);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(227, 25);
+            this.txtPesquisa.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Pesquisar ( Identificação ):";
             // 
             // groupBox1
             // 
@@ -172,36 +175,33 @@ namespace Projeto_N2_POO.Forms
             this.ucIdentificacao.TextoLabel1 = "Identificação:";
             this.ucIdentificacao.TextoLabel2 = "label1";
             // 
-            // label1
+            // ucValorTotalRecebido
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 119);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Pesquisar ( Identificação ):";
+            this.ucValorTotalRecebido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ucValorTotalRecebido.BackColor = System.Drawing.Color.Transparent;
+            this.ucValorTotalRecebido.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
+            this.ucValorTotalRecebido.ForeColor = System.Drawing.Color.White;
+            this.ucValorTotalRecebido.Location = new System.Drawing.Point(125, 76);
+            this.ucValorTotalRecebido.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucValorTotalRecebido.Name = "ucValorTotalRecebido";
+            this.ucValorTotalRecebido.Size = new System.Drawing.Size(324, 22);
+            this.ucValorTotalRecebido.TabIndex = 1;
+            this.ucValorTotalRecebido.TextoLabel1 = "Quantidade Total de Valor Recebido:";
+            this.ucValorTotalRecebido.TextoLabel2 = "label1";
             // 
-            // txtPesquisa
+            // ucQtdCadastrado
             // 
-            this.txtPesquisa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPesquisa.Location = new System.Drawing.Point(240, 116);
-            this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(227, 25);
-            this.txtPesquisa.TabIndex = 4;
-            // 
-            // btnPesquisa
-            // 
-            this.btnPesquisa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnPesquisa.FlatAppearance.BorderSize = 0;
-            this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisa.Image = global::Projeto_N2_POO.Properties.Resources.Lupa;
-            this.btnPesquisa.Location = new System.Drawing.Point(473, 112);
-            this.btnPesquisa.Name = "btnPesquisa";
-            this.btnPesquisa.Size = new System.Drawing.Size(30, 30);
-            this.btnPesquisa.TabIndex = 5;
-            this.btnPesquisa.UseVisualStyleBackColor = true;
-            this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
+            this.ucQtdCadastrado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ucQtdCadastrado.BackColor = System.Drawing.Color.Transparent;
+            this.ucQtdCadastrado.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
+            this.ucQtdCadastrado.ForeColor = System.Drawing.Color.White;
+            this.ucQtdCadastrado.Location = new System.Drawing.Point(125, 36);
+            this.ucQtdCadastrado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ucQtdCadastrado.Name = "ucQtdCadastrado";
+            this.ucQtdCadastrado.Size = new System.Drawing.Size(324, 22);
+            this.ucQtdCadastrado.TabIndex = 0;
+            this.ucQtdCadastrado.TextoLabel1 = "Quantidade de Pedagios Cadastrados: ";
+            this.ucQtdCadastrado.TextoLabel2 = "label1";
             // 
             // frGerenciarPedagio
             // 

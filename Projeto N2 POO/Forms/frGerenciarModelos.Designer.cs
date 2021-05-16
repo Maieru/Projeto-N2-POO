@@ -48,7 +48,7 @@ namespace Projeto_N2_POO.Forms
             this.btnPesquisa.FlatAppearance.BorderSize = 0;
             this.btnPesquisa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisa.Image = global::Projeto_N2_POO.Properties.Resources.Lupa;
-            this.btnPesquisa.Location = new System.Drawing.Point(475, 111);
+            this.btnPesquisa.Location = new System.Drawing.Point(473, 112);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(30, 30);
             this.btnPesquisa.TabIndex = 11;
@@ -58,7 +58,7 @@ namespace Projeto_N2_POO.Forms
             // txtPesquisa
             // 
             this.txtPesquisa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPesquisa.Location = new System.Drawing.Point(242, 115);
+            this.txtPesquisa.Location = new System.Drawing.Point(240, 116);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(227, 25);
             this.txtPesquisa.TabIndex = 10;
@@ -67,7 +67,7 @@ namespace Projeto_N2_POO.Forms
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 118);
+            this.label1.Location = new System.Drawing.Point(68, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 19);
             this.label1.TabIndex = 9;
@@ -82,7 +82,7 @@ namespace Projeto_N2_POO.Forms
             this.groupBox1.Controls.Add(this.ucDescricao);
             this.groupBox1.Controls.Add(this.ucCodigo);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.groupBox1.Location = new System.Drawing.Point(74, 160);
+            this.groupBox1.Location = new System.Drawing.Point(72, 161);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(431, 306);
             this.groupBox1.TabIndex = 8;
@@ -180,7 +180,7 @@ namespace Projeto_N2_POO.Forms
             this.ucQtdCadastrado.BackColor = System.Drawing.Color.Transparent;
             this.ucQtdCadastrado.Font = new System.Drawing.Font("Segoe UI Emoji", 10F);
             this.ucQtdCadastrado.ForeColor = System.Drawing.Color.White;
-            this.ucQtdCadastrado.Location = new System.Drawing.Point(127, 66);
+            this.ucQtdCadastrado.Location = new System.Drawing.Point(125, 66);
             this.ucQtdCadastrado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ucQtdCadastrado.Name = "ucQtdCadastrado";
             this.ucQtdCadastrado.Size = new System.Drawing.Size(324, 22);
