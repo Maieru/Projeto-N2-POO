@@ -14,9 +14,12 @@ namespace Projeto_N2_POO.Classes
         public string AlteraLimpador()
         {
             if (LimpadorLigado)
-                return "Limpador do veículo " + " " + Modelo + " desligado.";
-
-            return "Limpador do veículo " + " " + Modelo + " ligado.";
+            {
+                LimpadorLigado = false;
+                return "Limpador do veículo " + Identificacao + " desligado.";
+            }
+            LimpadorLigado = true;
+            return "Limpador do veículo " + Identificacao + " ligado.";
         }
     }
 }

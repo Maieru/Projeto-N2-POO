@@ -12,19 +12,18 @@ using System.Windows.Forms;
 
 namespace Projeto_N2_POO
 {
-    public partial class frMain : Form
+    public partial class frMainMenu : Form
     {
         private Form formAberto = null;
-
-        public frMain()
+        public frMainMenu()
         {
             InitializeComponent();
-
             Dados.LerMarcas();
             Dados.LerModelo();
             Dados.LerPedagio();
+            Dados.LerVeiculo();
         }
-
+        
         private void btnAbriMenuCadastro_Click(object sender, EventArgs e)
         {
             if (pnlCadastro.Visible)
@@ -73,6 +72,26 @@ namespace Projeto_N2_POO
         private void btnCadSemaforo_Click(object sender, EventArgs e)
         {
             AbrirForm(new frCadastroPedagio());
+        }
+        private void btnCadCarro_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroCarro());
+        }
+        private void btnCadCaminhao_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroCaminhao());
+        }
+        private void btnCadOnibus_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroOnibus());
+        }
+        private void btnCadMoto_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroMoto());
+        }
+        private void btnCadAviao_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroAviao());
         }
     }
 }

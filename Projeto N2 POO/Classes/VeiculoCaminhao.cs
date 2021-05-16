@@ -7,14 +7,23 @@ using System.Threading.Tasks;
 
 namespace Projeto_N2_POO.Classes
 {
-    class Caminhao : VeiculoBase, IVeiculoComEixos, IVeiculoComLimpador, IVeiculoPossuiPassageiro, IVeiculoPagaPedagio
+    class VeiculoCaminhao : VeiculoBaseComPassageiro, IVeiculoComEixos, IVeiculoComLimpador, IVeiculoPagaPedagio
     {
         private double pesoCarregado = 0;
         private double capacidadeMaxima = 0;
+        private int quantidadeDeEixos;
 
-        public int QuantidadeDeEixos { get; set; }
-        public bool LimpadorLigado { get; private set; }
-        public int CapacidadeDePassageiro { get; set; }
+        public int QuantidadeDeEixos
+        { 
+            get => quantidadeDeEixos;
+            set
+            {
+                if (value <= 0)
+                    throw new Exception("O veiculo deve ter ao menos 1 eixo.");
+                quantidadeDeEixos = value;
+            }
+        }
+        public bool LimpadorLigado { get; private set; } = false;
         public double PesoCarregado
         {
             get => pesoCarregado;
@@ -40,9 +49,12 @@ namespace Projeto_N2_POO.Classes
         public string AlteraLimpador()
         {
             if (LimpadorLigado)
-                return "Limpador do veículo " + " " + Modelo + " desligado.";
-
-            return "Limpador do veículo " + " " + Modelo + " ligado.";
+            {
+                LimpadorLigado = false;
+                return "Limpador do veículo " + " " + Identificacao + " desligado.";
+            }
+            LimpadorLigado = true;
+            return "Limpador do veículo " + " " + Identificacao + " ligado.";
         }
         public double PagarPedagio() => 8.5 * QuantidadeDeEixos;
         public void Carregar(double peso) => PesoCarregado += peso;
