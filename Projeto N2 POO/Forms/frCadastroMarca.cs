@@ -25,8 +25,8 @@ namespace Projeto_N2_POO.Forms
                 Dados.AdicionarMarca(new Marca(Convert.ToInt32(ucCodigo.TextoDaTextBox),
                                                ucDescricao.TextoDaTextBox,
                                                ucSeletorDeTipos.TiposMarcados));
-                ucDescricao.TextoDaTextBox = "";
-                ucCodigo.TextoDaTextBox = "";
+
+                LimpaCampos(Controls);
                 ucMarcador.AlterarCheckbox(false);
             }
             catch (Exception erro)

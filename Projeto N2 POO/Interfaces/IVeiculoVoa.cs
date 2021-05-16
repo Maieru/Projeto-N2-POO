@@ -8,8 +8,10 @@ namespace Projeto_N2_POO.Interfaces
 {
     interface IVeiculoVoa
     {
+        bool VeiculoEstaNoAr { get; }
+
         void Pousar();
-        void Arremeter();
+        string Arremeter();
         void Decolar();
     }
 }
