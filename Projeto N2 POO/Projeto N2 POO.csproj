@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Caminhao.cs" />
     <Compile Include="Classes\Carro.cs" />
     <Compile Include="Classes\Dados.cs" />
     <Compile Include="Classes\Marca.cs" />
@@ -242,6 +243,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\iconfinder_save_3325027.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

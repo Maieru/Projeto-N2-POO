@@ -435,17 +435,18 @@ namespace Projeto_N2_POO
             this.btnCadSemaforo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadSemaforo.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadSemaforo.ForeColor = System.Drawing.Color.White;
-            this.btnCadSemaforo.Image = global::Projeto_N2_POO.Properties.Resources.semaforo;
+            this.btnCadSemaforo.Image = global::Projeto_N2_POO.Properties.Resources.Sem_título;
             this.btnCadSemaforo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadSemaforo.Location = new System.Drawing.Point(0, 520);
             this.btnCadSemaforo.Name = "btnCadSemaforo";
             this.btnCadSemaforo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCadSemaforo.Size = new System.Drawing.Size(208, 35);
             this.btnCadSemaforo.TabIndex = 4;
-            this.btnCadSemaforo.Text = "Cadastro Semáforo";
+            this.btnCadSemaforo.Text = "Cadastro Pedagio";
             this.btnCadSemaforo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadSemaforo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadSemaforo.UseVisualStyleBackColor = false;
+            this.btnCadSemaforo.Click += new System.EventHandler(this.btnCadSemaforo_Click);
             // 
             // btnCadModelo
             // 
@@ -709,6 +710,7 @@ namespace Projeto_N2_POO
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.DoubleBuffered = true;
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "frMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
