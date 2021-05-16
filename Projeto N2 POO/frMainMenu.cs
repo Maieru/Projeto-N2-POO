@@ -93,6 +93,14 @@ namespace Projeto_N2_POO
         {
             AbrirForm(new frCadastroAviao());
         }
+        private void btnGenMarca_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarMarcas());
+        }
+        private void btnGenModelo_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarModelos());
+        }
         private void btnGenPedagio_Click(object sender, EventArgs e)
         {
             AbrirForm(new frGerenciarPedagio());

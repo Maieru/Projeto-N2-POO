@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Projeto_N2_POO.Classes
 {
-    class VeiculoAviao : VeiculoBaseComPassageiro, IVeiculoVoa, IVeiculoComLimpador
+    class VeiculoAviao : VeiculoAereoBase, IVeiculoComLimpador
     {
         public bool LimpadorLigado { get; private set; } = false;
-        public bool VeiculoEstaNoAr { get; private set; } = false;
 
         public string AlteraLimpador()
         {
@@ -22,14 +21,5 @@ namespace Projeto_N2_POO.Classes
             LimpadorLigado = true;
             return "Limpador do veículo " + " " + Identificacao + " ligado.";
         }
-        public string Arremeter()
-        {
-            if (VeiculoEstaNoAr)
-                return "O avião " + Identificacao + " arremeteu.";
-            else
-                return "O avião " + Identificacao + " não arremeteu por que está no chao.";
-        }
-        public void Decolar() => VeiculoEstaNoAr = true;
-        public void Pousar() => VeiculoEstaNoAr = false;
     }
 }

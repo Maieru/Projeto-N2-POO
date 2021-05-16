@@ -7,7 +7,7 @@ using Projeto_N2_POO.Interfaces;
 
 namespace Projeto_N2_POO.Classes
 {
-    class AviaoDeGuerra : VeiculoAereoBase, IVeiculoDeGuerra, IVeiculoEjetavel
+    class VeiculoAviaoDeGuerra : VeiculoAereoBase, IVeiculoDeGuerra, IVeiculoEjetavel
     {
         public void Atacar()
         {

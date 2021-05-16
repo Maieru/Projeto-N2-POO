@@ -28,6 +28,19 @@ namespace Projeto_N2_POO.User_Controls
                 else
                     return null;
             }
+            set
+            {
+                if (value == null)
+                    return;
+                if (value.Count == 0)
+                    throw new Exception("Não foi possível selecionar os tipos.");
+
+                foreach (Control controle in Controls)
+                    if (value.Contains((EnumTipoVeiculo)Convert.ToInt32(controle.Tag)))
+                        (controle as CheckBox).Checked = true;
+                    else
+                        (controle as CheckBox).Checked = false;
+            }
         }
         public ucSeletorDeTipos()
         {

@@ -24,6 +24,6 @@ namespace Projeto_N2_POO.Classes
             else
                 throw new Exception("A aeronave " + Identificacao + " já está voanda.");
         }
-        public string Arremeter() { return "A aeronave " + Identificacao + " está abortando a descida"; }
+        public string Arremeter() => "A aeronave " + Identificacao + " está abortando a descida"; 
     }
 }

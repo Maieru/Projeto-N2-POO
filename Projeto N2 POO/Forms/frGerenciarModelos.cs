@@ -11,28 +11,24 @@ using System.Windows.Forms;
 
 namespace Projeto_N2_POO.Forms
 {
-    public partial class frGerenciarPedagio : frBase
+    public partial class frGerenciarModelos : frBase
     {
         private int index = 0;
-        public frGerenciarPedagio()
+        public frGerenciarModelos()
         {
             InitializeComponent();
+
             if (Dados.Pedagios.Count == 0)
             {
                 ExibeTelaDeErro();
                 return;
             }
 
-            ucQtdCadastrado.TextoLabel2 = Dados.Pedagios.Count.ToString();
+            ucQtdCadastrado.TextoLabel2 = Dados.Modelos.Count.ToString();
 
-            double totalArrecadado = 0;
-
-            foreach (Pedagio pedagio in Dados.Pedagios)
-                totalArrecadado += pedagio.TotalRecebidoDePedagios;
-
-            ucValorTotalRecebido.TextoLabel2 = "R$ " + totalArrecadado.ToString("0.00");
             AtualizaValor();
         }
+
         public void ExibeTelaDeErro()
         {
             Panel panel = new Panel();
@@ -43,22 +39,22 @@ namespace Projeto_N2_POO.Forms
                 Text = "Nenhum pedágio encontrado",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Dock = DockStyle.Fill
-            }) ;
+            });
             Controls.Add(panel);
         }
         public void AtualizaValor()
         {
-            ucIdentificacao.TextoLabel2 = Dados.Pedagios[index].Identificacao;
-            ucLocalizacao.TextoLabel2 = Dados.Pedagios[index].Localizacao;
-            ucValorArrecadado.TextoLabel2 = "R$ " + Dados.Pedagios[index].TotalRecebidoDePedagios.ToString("0.00");
+            ucCodigo.TextoLabel2 = Dados.Modelos[index].Codigo.ToString();
+            ucDescricao.TextoLabel2 = Dados.Modelos[index].Descricao;
+            ucMarca.TextoLabel2 = Dados.Modelos[index].Marca.Descricao;
         }
 
         private void btnProximo_Click(object sender, EventArgs e)
         {
-            if (index < Dados.Pedagios.Count - 1)
+            if (index < Dados.Modelos.Count - 1)
                 index++;
             else
-                MessageBox.Show("Este é o último pedágio cadastrado.", "Erro !", MessageBoxButtons.OK,
+                MessageBox.Show("Este é o útimo modelo cadastrado.", "Erro !", MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);
 
             AtualizaValor();
@@ -68,19 +64,19 @@ namespace Projeto_N2_POO.Forms
             if (index > 0)
                 index--;
             else
-                MessageBox.Show("Este é o primeiro pedágio cadastrado.", "Erro !", MessageBoxButtons.OK,
+                MessageBox.Show("Este é o primeiro modelo cadastrado.", "Erro !", MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);
 
             AtualizaValor();
         }
         private void btnPesquisa_Click(object sender, EventArgs e)
         {
-            int aux = Dados.Pedagios.FindIndex(c => c.Identificacao == txtPesquisa.Text);
+            int aux = Dados.Modelos.FindIndex(c => c.Descricao == txtPesquisa.Text);
 
             if (aux >= 0)
                 index = aux;
             else
-                MessageBox.Show("Este pedágio não existe.", "Erro !", MessageBoxButtons.OK,
+                MessageBox.Show("Este modelo não existe.", "Erro !", MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);
 
             AtualizaValor();

@@ -49,8 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Aviao.cs" />
-    <Compile Include="Classes\AviaoDeGuerra.cs" />
+    <Compile Include="Classes\VeiculoAviaoDeGuerra.cs" />
     <Compile Include="Classes\VeiculoAviao.cs" />
     <Compile Include="Classes\VeiculoCaminhao.cs" />
     <Compile Include="Classes\VeiculoCarro.cs" />
@@ -117,6 +116,18 @@
     </Compile>
     <Compile Include="Forms\frCadastroPedagio.Designer.cs">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarMarcas.Designer.cs">
+      <DependentUpon>frGerenciarMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarModelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarModelos.Designer.cs">
+      <DependentUpon>frGerenciarModelos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frGerenciarPedagio.cs">
       <SubType>Form</SubType>
@@ -196,6 +207,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroPedagio.resx">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarMarcas.resx">
+      <DependentUpon>frGerenciarMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarModelos.resx">
+      <DependentUpon>frGerenciarModelos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frGerenciarPedagio.resx">
       <DependentUpon>frGerenciarPedagio.cs</DependentUpon>
