@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Aviao.cs" />
+    <Compile Include="Classes\AviaoDeGuerra.cs" />
     <Compile Include="Classes\Caminhao.cs" />
     <Compile Include="Classes\Carro.cs" />
     <Compile Include="Classes\Dados.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="Classes\Modelo.cs" />
     <Compile Include="Classes\Moto.cs" />
     <Compile Include="Classes\Pedagio.cs" />
+    <Compile Include="Classes\VeiculoAereoBase.cs" />
     <Compile Include="Classes\VeiculoBase.cs" />
     <Compile Include="Enumeradores\EnumTipoVeiculo.cs" />
     <Compile Include="Forms\frBase.cs">
@@ -97,6 +100,7 @@
     <Compile Include="Interfaces\IVeiculoComEixos.cs" />
     <Compile Include="Interfaces\IVeiculoComLimpador.cs" />
     <Compile Include="Interfaces\IVeiculoDeGuerra.cs" />
+    <Compile Include="Interfaces\IVeiculoEjetavel.cs" />
     <Compile Include="Interfaces\IVeiculoMarino.cs" />
     <Compile Include="Interfaces\IVeiculoPagaPedagio.cs" />
     <Compile Include="Interfaces\IVeiculoPossuiPassageiro.cs" />
