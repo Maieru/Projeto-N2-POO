@@ -7,10 +7,9 @@ using Projeto_N2_POO.Interfaces;
 
 namespace Projeto_N2_POO.Classes
 {
-    abstract class VeiculoAereoBase : VeiculoBase, IVeiculoVoa, IVeiculoPossuiPassageiro
+    abstract class VeiculoAereoBase : VeiculoBaseComPassageiro, IVeiculoVoa
     {
         public bool VeiculoEstaNoAr { get; private set; }
-        public int CapacidadeDePassageiro { get; set; }
         public void Pousar()
         {
             if (VeiculoEstaNoAr)
@@ -25,9 +24,6 @@ namespace Projeto_N2_POO.Classes
             else
                 throw new Exception("A aeronave " + Identificacao + " já está voanda.");
         }
-        public string Arremeter()
-        {
-            return null;
-        }
+        public string Arremeter() { return "A aeronave " + Identificacao + " está abortando a descida"; }
     }
 }
