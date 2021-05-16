@@ -243,6 +243,16 @@ namespace Projeto_N2_POO.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lupa {
+            get {
+                object obj = ResourceManager.GetObject("Lupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mini_trem {
             get {
                 object obj = ResourceManager.GetObject("mini-trem", resourceCulture);
@@ -286,6 +296,26 @@ namespace Projeto_N2_POO.Properties {
         internal static System.Drawing.Bitmap semaforo {
             get {
                 object obj = ResourceManager.GetObject("semaforo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetaAnterior {
+            get {
+                object obj = ResourceManager.GetObject("SetaAnterior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SetaProximo {
+            get {
+                object obj = ResourceManager.GetObject("SetaProximo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

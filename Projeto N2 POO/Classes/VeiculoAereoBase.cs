@@ -9,25 +9,25 @@ namespace Projeto_N2_POO.Classes
 {
     abstract class VeiculoAereoBase : VeiculoBase, IVeiculoVoa, IVeiculoPossuiPassageiro
     {
-        private bool aeronaveVoando = false;
+        public bool VeiculoEstaNoAr { get; private set; }
         public int CapacidadeDePassageiro { get; set; }
         public void Pousar()
         {
-            if (aeronaveVoando)
-                aeronaveVoando = false;
+            if (VeiculoEstaNoAr)
+                VeiculoEstaNoAr = false;
             else
                 throw new Exception("A aeronave " + Identificacao + " já está no solo.");
         }
         public void Decolar()
         {
-            if (!aeronaveVoando)
-                aeronaveVoando = true;
+            if (!VeiculoEstaNoAr)
+                VeiculoEstaNoAr = true;
             else
                 throw new Exception("A aeronave " + Identificacao + " já está voanda.");
         }
-        public void Arremeter()
+        public string Arremeter()
         {
-
+            return null;
         }
     }
 }

@@ -93,5 +93,9 @@ namespace Projeto_N2_POO
         {
             AbrirForm(new frCadastroAviao());
         }
+        private void btnGenPedagio_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarPedagio());
+        }
     }
 }

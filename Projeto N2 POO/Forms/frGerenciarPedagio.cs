@@ -13,18 +13,77 @@ namespace Projeto_N2_POO.Forms
 {
     public partial class frGerenciarPedagio : frBase
     {
+        private int index = 0;
         public frGerenciarPedagio()
         {
             InitializeComponent();
-
             if (Dados.Pedagios.Count == 0)
+            {
                 ExibeTelaDeErro();
+                return;
+            }
+
+            ucQtdCadastrado.TextoLabel2 = Dados.Pedagios.Count.ToString();
+
+            double totalArrecadado = 0;
+
+            foreach (Pedagio pedagio in Dados.Pedagios)
+                totalArrecadado += pedagio.TotalRecebidoDePedagios;
+
+            ucValorTotalRecebido.TextoLabel2 = totalArrecadado.ToString();
+            AtualizaValor();
         }
         public void ExibeTelaDeErro()
         {
-            PictureBox pictureBox = new PictureBox();
-            pictureBox.Dock = DockStyle.Fill;
-            pi
+            Panel panel = new Panel();
+            panel.Dock = DockStyle.Fill;
+            panel.Controls.Add(
+            new Label
+            {
+                Text = "Nenhum pedágio encontrado",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Dock = DockStyle.Fill
+            }) ;
+            Controls.Add(panel);
+        }
+        public void AtualizaValor()
+        {
+            ucIdentificacao.TextoLabel2 = Dados.Pedagios[index].Identificacao;
+            ucLocalizacao.TextoLabel2 = Dados.Pedagios[index].Localizacao;
+            ucValorArrecadado.TextoLabel2 = Dados.Pedagios[index].TotalRecebidoDePedagios.ToString();
+        }
+
+        private void btnProximo_Click(object sender, EventArgs e)
+        {
+            if (index < Dados.Pedagios.Count - 1)
+                index++;
+            else
+                MessageBox.Show("Este é o último pedágio cadastrado.", "Erro !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+
+            AtualizaValor();
+        }
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (index > 0)
+                index--;
+            else
+                MessageBox.Show("Este é o primeiro pedágio cadastrado.", "Erro !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+
+            AtualizaValor();
+        }
+        private void btnPesquisa_Click(object sender, EventArgs e)
+        {
+            int aux = Dados.Pedagios.FindIndex(c => c.Identificacao == txtPesquisa.Text);
+
+            if (aux >= 0)
+                index = aux;
+            else
+                MessageBox.Show("Este pedágio não existe.", "Erro !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+
+            AtualizaValor();
         }
     }
 }

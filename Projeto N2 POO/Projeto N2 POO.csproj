@@ -51,8 +51,6 @@
   <ItemGroup>
     <Compile Include="Classes\Aviao.cs" />
     <Compile Include="Classes\AviaoDeGuerra.cs" />
-    <Compile Include="Classes\Caminhao.cs" />
-    <Compile Include="Classes\Carro.cs" />
     <Compile Include="Classes\VeiculoAviao.cs" />
     <Compile Include="Classes\VeiculoCaminhao.cs" />
     <Compile Include="Classes\VeiculoCarro.cs" />
@@ -154,6 +152,12 @@
     <Compile Include="User Controls\ucCheckAndUncheck.Designer.cs">
       <DependentUpon>ucCheckAndUncheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\ucLabelComTextoVariavel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucLabelComTextoVariavel.Designer.cs">
+      <DependentUpon>ucLabelComTextoVariavel.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\ucLabelETextbox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -214,6 +218,9 @@
     </Compile>
     <EmbeddedResource Include="User Controls\ucCheckAndUncheck.resx">
       <DependentUpon>ucCheckAndUncheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucLabelComTextoVariavel.resx">
+      <DependentUpon>ucLabelComTextoVariavel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\ucLabelETextbox.resx">
       <DependentUpon>ucLabelETextbox.cs</DependentUpon>
@@ -309,6 +316,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sem título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetaProximo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetaAnterior.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

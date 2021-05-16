@@ -30,15 +30,14 @@ namespace Projeto_N2_POO
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pnlGerencia = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnlCadastro = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlMainForm = new System.Windows.Forms.Panel();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnConfig = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlGerencia = new System.Windows.Forms.Panel();
+            this.btnGenPedagio = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnGenNavioDeGuerra = new System.Windows.Forms.Button();
             this.btnGenNavio = new System.Windows.Forms.Button();
             this.btnGenTrem = new System.Windows.Forms.Button();
             this.btnGenAviaoDeGuerra = new System.Windows.Forms.Button();
@@ -48,9 +47,11 @@ namespace Projeto_N2_POO
             this.btnGenCaminhao = new System.Windows.Forms.Button();
             this.btnGenCarro = new System.Windows.Forms.Button();
             this.btnGerencia = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnCadSemaforo = new System.Windows.Forms.Button();
             this.btnCadModelo = new System.Windows.Forms.Button();
             this.btnCadMarca = new System.Windows.Forms.Button();
+            this.pnlCadastro = new System.Windows.Forms.Panel();
             this.btnCadNavioDeGuerra = new System.Windows.Forms.Button();
             this.btnCadNavio = new System.Windows.Forms.Button();
             this.btnCadTrem = new System.Windows.Forms.Button();
@@ -61,10 +62,9 @@ namespace Projeto_N2_POO
             this.btnCadCaminhao = new System.Windows.Forms.Button();
             this.btnCadCarro = new System.Windows.Forms.Button();
             this.btnMenuCadastro = new System.Windows.Forms.Button();
-            this.btnGenNavioDeGuerra = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMainForm = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.pnlGerencia.SuspendLayout();
             this.pnlCadastro.SuspendLayout();
@@ -93,90 +93,6 @@ namespace Projeto_N2_POO
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(225, 500);
             this.panel2.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 1030);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(208, 20);
-            this.panel5.TabIndex = 9;
-            // 
-            // pnlGerencia
-            // 
-            this.pnlGerencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.pnlGerencia.Controls.Add(this.button3);
-            this.pnlGerencia.Controls.Add(this.button2);
-            this.pnlGerencia.Controls.Add(this.button1);
-            this.pnlGerencia.Controls.Add(this.btnGenNavioDeGuerra);
-            this.pnlGerencia.Controls.Add(this.btnGenNavio);
-            this.pnlGerencia.Controls.Add(this.btnGenTrem);
-            this.pnlGerencia.Controls.Add(this.btnGenAviaoDeGuerra);
-            this.pnlGerencia.Controls.Add(this.btnGenAviao);
-            this.pnlGerencia.Controls.Add(this.btnGenMoto);
-            this.pnlGerencia.Controls.Add(this.btnGenOnibus);
-            this.pnlGerencia.Controls.Add(this.btnGenCaminhao);
-            this.pnlGerencia.Controls.Add(this.btnGenCarro);
-            this.pnlGerencia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlGerencia.Location = new System.Drawing.Point(0, 610);
-            this.pnlGerencia.Name = "pnlGerencia";
-            this.pnlGerencia.Size = new System.Drawing.Size(208, 420);
-            this.pnlGerencia.TabIndex = 8;
-            this.pnlGerencia.Visible = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 555);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(208, 20);
-            this.panel4.TabIndex = 0;
-            // 
-            // pnlCadastro
-            // 
-            this.pnlCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.pnlCadastro.Controls.Add(this.btnCadNavioDeGuerra);
-            this.pnlCadastro.Controls.Add(this.btnCadNavio);
-            this.pnlCadastro.Controls.Add(this.btnCadTrem);
-            this.pnlCadastro.Controls.Add(this.btnCadAviaoDeGuerra);
-            this.pnlCadastro.Controls.Add(this.btnCadAviao);
-            this.pnlCadastro.Controls.Add(this.btnCadMoto);
-            this.pnlCadastro.Controls.Add(this.btnCadOnibus);
-            this.pnlCadastro.Controls.Add(this.btnCadCaminhao);
-            this.pnlCadastro.Controls.Add(this.btnCadCarro);
-            this.pnlCadastro.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCadastro.Location = new System.Drawing.Point(0, 135);
-            this.pnlCadastro.Name = "pnlCadastro";
-            this.pnlCadastro.Size = new System.Drawing.Size(208, 315);
-            this.pnlCadastro.TabIndex = 0;
-            this.pnlCadastro.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(208, 100);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pnlMainForm);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(225, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(575, 500);
-            this.panel1.TabIndex = 2;
-            // 
-            // pnlMainForm
-            // 
-            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(135)))));
-            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainForm.Location = new System.Drawing.Point(0, 0);
-            this.pnlMainForm.Name = "pnlMainForm";
-            this.pnlMainForm.Size = new System.Drawing.Size(575, 500);
-            this.pnlMainForm.TabIndex = 0;
             // 
             // btnSobre
             // 
@@ -220,6 +136,121 @@ namespace Projeto_N2_POO
             this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfig.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 1030);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(208, 20);
+            this.panel5.TabIndex = 9;
+            // 
+            // pnlGerencia
+            // 
+            this.pnlGerencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pnlGerencia.Controls.Add(this.btnGenPedagio);
+            this.pnlGerencia.Controls.Add(this.button2);
+            this.pnlGerencia.Controls.Add(this.button1);
+            this.pnlGerencia.Controls.Add(this.btnGenNavioDeGuerra);
+            this.pnlGerencia.Controls.Add(this.btnGenNavio);
+            this.pnlGerencia.Controls.Add(this.btnGenTrem);
+            this.pnlGerencia.Controls.Add(this.btnGenAviaoDeGuerra);
+            this.pnlGerencia.Controls.Add(this.btnGenAviao);
+            this.pnlGerencia.Controls.Add(this.btnGenMoto);
+            this.pnlGerencia.Controls.Add(this.btnGenOnibus);
+            this.pnlGerencia.Controls.Add(this.btnGenCaminhao);
+            this.pnlGerencia.Controls.Add(this.btnGenCarro);
+            this.pnlGerencia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlGerencia.Location = new System.Drawing.Point(0, 610);
+            this.pnlGerencia.Name = "pnlGerencia";
+            this.pnlGerencia.Size = new System.Drawing.Size(208, 420);
+            this.pnlGerencia.TabIndex = 8;
+            this.pnlGerencia.Visible = false;
+            // 
+            // btnGenPedagio
+            // 
+            this.btnGenPedagio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenPedagio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenPedagio.FlatAppearance.BorderSize = 0;
+            this.btnGenPedagio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenPedagio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenPedagio.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenPedagio.ForeColor = System.Drawing.Color.White;
+            this.btnGenPedagio.Image = global::Projeto_N2_POO.Properties.Resources.Sem_título;
+            this.btnGenPedagio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenPedagio.Location = new System.Drawing.Point(0, 385);
+            this.btnGenPedagio.Name = "btnGenPedagio";
+            this.btnGenPedagio.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenPedagio.Size = new System.Drawing.Size(208, 35);
+            this.btnGenPedagio.TabIndex = 13;
+            this.btnGenPedagio.Text = "Pedagio";
+            this.btnGenPedagio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenPedagio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenPedagio.UseVisualStyleBackColor = false;
+            this.btnGenPedagio.Click += new System.EventHandler(this.btnGenPedagio_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Projeto_N2_POO.Properties.Resources.modelo_3d;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 350);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(208, 35);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "Modelo";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Projeto_N2_POO.Properties.Resources.brand1;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 315);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(208, 35);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Marca";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnGenNavioDeGuerra
+            // 
+            this.btnGenNavioDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnGenNavioDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGenNavioDeGuerra.FlatAppearance.BorderSize = 0;
+            this.btnGenNavioDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGenNavioDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenNavioDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenNavioDeGuerra.ForeColor = System.Drawing.Color.White;
+            this.btnGenNavioDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
+            this.btnGenNavioDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavioDeGuerra.Location = new System.Drawing.Point(0, 280);
+            this.btnGenNavioDeGuerra.Name = "btnGenNavioDeGuerra";
+            this.btnGenNavioDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnGenNavioDeGuerra.Size = new System.Drawing.Size(208, 35);
+            this.btnGenNavioDeGuerra.TabIndex = 10;
+            this.btnGenNavioDeGuerra.Text = "Navio de Guerra";
+            this.btnGenNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenNavioDeGuerra.UseVisualStyleBackColor = false;
             // 
             // btnGenNavio
             // 
@@ -411,6 +442,14 @@ namespace Projeto_N2_POO
             this.btnGerencia.UseVisualStyleBackColor = false;
             this.btnGerencia.Click += new System.EventHandler(this.btnGerencia_Click);
             // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 555);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(208, 20);
+            this.panel4.TabIndex = 0;
+            // 
             // btnCadSemaforo
             // 
             this.btnCadSemaforo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
@@ -476,6 +515,25 @@ namespace Projeto_N2_POO
             this.btnCadMarca.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadMarca.UseVisualStyleBackColor = false;
             this.btnCadMarca.Click += new System.EventHandler(this.btnCadMarca_Click);
+            // 
+            // pnlCadastro
+            // 
+            this.pnlCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pnlCadastro.Controls.Add(this.btnCadNavioDeGuerra);
+            this.pnlCadastro.Controls.Add(this.btnCadNavio);
+            this.pnlCadastro.Controls.Add(this.btnCadTrem);
+            this.pnlCadastro.Controls.Add(this.btnCadAviaoDeGuerra);
+            this.pnlCadastro.Controls.Add(this.btnCadAviao);
+            this.pnlCadastro.Controls.Add(this.btnCadMoto);
+            this.pnlCadastro.Controls.Add(this.btnCadOnibus);
+            this.pnlCadastro.Controls.Add(this.btnCadCaminhao);
+            this.pnlCadastro.Controls.Add(this.btnCadCarro);
+            this.pnlCadastro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlCadastro.Location = new System.Drawing.Point(0, 135);
+            this.pnlCadastro.Name = "pnlCadastro";
+            this.pnlCadastro.Size = new System.Drawing.Size(208, 315);
+            this.pnlCadastro.TabIndex = 0;
+            this.pnlCadastro.Visible = false;
             // 
             // btnCadNavioDeGuerra
             // 
@@ -693,89 +751,32 @@ namespace Projeto_N2_POO
             this.btnMenuCadastro.UseVisualStyleBackColor = false;
             this.btnMenuCadastro.Click += new System.EventHandler(this.btnAbriMenuCadastro_Click);
             // 
-            // btnGenNavioDeGuerra
+            // panel3
             // 
-            this.btnGenNavioDeGuerra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.btnGenNavioDeGuerra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnGenNavioDeGuerra.FlatAppearance.BorderSize = 0;
-            this.btnGenNavioDeGuerra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.btnGenNavioDeGuerra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenNavioDeGuerra.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenNavioDeGuerra.ForeColor = System.Drawing.Color.White;
-            this.btnGenNavioDeGuerra.Image = global::Projeto_N2_POO.Properties.Resources.navio_de_guerra;
-            this.btnGenNavioDeGuerra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenNavioDeGuerra.Location = new System.Drawing.Point(0, 280);
-            this.btnGenNavioDeGuerra.Name = "btnGenNavioDeGuerra";
-            this.btnGenNavioDeGuerra.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnGenNavioDeGuerra.Size = new System.Drawing.Size(208, 35);
-            this.btnGenNavioDeGuerra.TabIndex = 10;
-            this.btnGenNavioDeGuerra.Text = "Navio de Guerra";
-            this.btnGenNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGenNavioDeGuerra.UseVisualStyleBackColor = false;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(208, 100);
+            this.panel3.TabIndex = 1;
             // 
-            // button1
+            // panel1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Projeto_N2_POO.Properties.Resources.brand1;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 315);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(208, 35);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Marca";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.panel1.Controls.Add(this.pnlMainForm);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(225, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(575, 500);
+            this.panel1.TabIndex = 2;
             // 
-            // button2
+            // pnlMainForm
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Projeto_N2_POO.Properties.Resources.modelo_3d;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 350);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(208, 35);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Modelo";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Projeto_N2_POO.Properties.Resources.Sem_título;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 385);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(208, 35);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Pedagio";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(135)))));
+            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainForm.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainForm.Name = "pnlMainForm";
+            this.pnlMainForm.Size = new System.Drawing.Size(575, 500);
+            this.pnlMainForm.TabIndex = 0;
             // 
             // frMainMenu
             // 
@@ -830,7 +831,7 @@ namespace Projeto_N2_POO
         private System.Windows.Forms.Button btnSobre;
         private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Panel pnlMainForm;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnGenPedagio;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnGenNavioDeGuerra;
