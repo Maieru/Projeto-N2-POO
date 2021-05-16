@@ -115,6 +115,12 @@
     <Compile Include="Forms\frCadastroPedagio.Designer.cs">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frGerenciarPedagio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarPedagio.Designer.cs">
+      <DependentUpon>frGerenciarPedagio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frSobre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroPedagio.resx">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarPedagio.resx">
+      <DependentUpon>frGerenciarPedagio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frSobre.resx">
       <DependentUpon>frSobre.cs</DependentUpon>
