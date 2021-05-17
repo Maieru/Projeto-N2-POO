@@ -9,13 +9,11 @@ namespace Projeto_N2_POO.Classes
 {
     class VeiculoAviaoDeGuerra : VeiculoAereoBase, IVeiculoDeGuerra, IVeiculoEjetavel
     {
-        public void Atacar()
-        {
-
-        }
-        public void Ejetar()
-        {
-
-        }
+        static private Random gerador = new Random();
+        public string Atacar() => "O avião " + Identificacao + " bombardeou " +
+                                  gerador.Next(1, 50) + " inimigos.";
+        public string Ejetar() => "O piloto do avião " + Identificacao + " ejetou e" +
+                                  (gerador.Next() % 4 == 0 ?
+                                  " foi capturado por nossos inimigos." : " passa bem.");
     }
 }

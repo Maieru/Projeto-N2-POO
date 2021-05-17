@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_N2_POO.Classes
 {
-    class Marca
+    public class Marca
     {
         private int codigo;
         private string descricao;

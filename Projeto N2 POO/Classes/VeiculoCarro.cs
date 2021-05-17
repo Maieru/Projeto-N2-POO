@@ -21,7 +21,7 @@ namespace Projeto_N2_POO.Classes
                 quantidadeDePortas = value;
             }
         }
-        public bool LimpadorLigado { get; private set; } = false;
+        public bool LimpadorLigado { get; private set; }
 
         public double PagarPedagio() => 7;
         public string AlteraLimpador()

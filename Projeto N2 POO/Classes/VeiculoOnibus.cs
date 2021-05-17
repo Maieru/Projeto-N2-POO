@@ -11,7 +11,7 @@ namespace Projeto_N2_POO.Classes
     {
         private int quantidadeDeEixos;
 
-        public bool LimpadorLigado { get; private set; } = false;
+        public bool LimpadorLigado { get; private set; }
         public int QuantidadeDeEixos
         {
             get => quantidadeDeEixos;

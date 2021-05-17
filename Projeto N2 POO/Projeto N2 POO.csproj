@@ -75,6 +75,12 @@
     <Compile Include="Forms\frCadastroAviao.Designer.cs">
       <DependentUpon>frCadastroAviao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frCadastroAviaoDeGuerra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroAviaoDeGuerra.Designer.cs">
+      <DependentUpon>frCadastroAviaoDeGuerra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frCadastroCaminhao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,36 @@
     <Compile Include="Forms\frCadastroPedagio.Designer.cs">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frGerenciarAviao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarAviao.Designer.cs">
+      <DependentUpon>frGerenciarAviao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarAviaoDeGuerra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarAviaoDeGuerra.Designer.cs">
+      <DependentUpon>frGerenciarAviaoDeGuerra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarCaminhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarCaminhao.Designer.cs">
+      <DependentUpon>frGerenciarCaminhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciar.Designer.cs">
+      <DependentUpon>frGerenciar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarCarro.Designer.cs">
+      <DependentUpon>frGerenciarCarro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frGerenciarMarcas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +164,18 @@
     </Compile>
     <Compile Include="Forms\frGerenciarModelos.Designer.cs">
       <DependentUpon>frGerenciarModelos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarMoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarMoto.Designer.cs">
+      <DependentUpon>frGerenciarMoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarOnibus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarOnibus.Designer.cs">
+      <DependentUpon>frGerenciarOnibus.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frGerenciarPedagio.cs">
       <SubType>Form</SubType>
@@ -151,17 +199,29 @@
     <Compile Include="Interfaces\IVeiculoComLimpador.cs" />
     <Compile Include="Interfaces\IVeiculoDeGuerra.cs" />
     <Compile Include="Interfaces\IVeiculoEjetavel.cs" />
-    <Compile Include="Interfaces\IVeiculoMarino.cs" />
+    <Compile Include="Interfaces\IVeiculoMarinho.cs" />
     <Compile Include="Interfaces\IVeiculoPagaPedagio.cs" />
     <Compile Include="Interfaces\IVeiculoPossuiPassageiro.cs" />
     <Compile Include="Interfaces\IVeiculoVoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\ucAcelerar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucAcelerar.Designer.cs">
+      <DependentUpon>ucAcelerar.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\ucCheckAndUncheck.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="User Controls\ucCheckAndUncheck.Designer.cs">
       <DependentUpon>ucCheckAndUncheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ucDesacelerar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ucDesacelerar.Designer.cs">
+      <DependentUpon>ucDesacelerar.cs</DependentUpon>
     </Compile>
     <Compile Include="User Controls\ucLabelComTextoVariavel.cs">
       <SubType>UserControl</SubType>
@@ -187,6 +247,9 @@
     <EmbeddedResource Include="Forms\frCadastroAviao.resx">
       <DependentUpon>frCadastroAviao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroAviaoDeGuerra.resx">
+      <DependentUpon>frCadastroAviaoDeGuerra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroCaminhao.resx">
       <DependentUpon>frCadastroCaminhao.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,11 +271,32 @@
     <EmbeddedResource Include="Forms\frCadastroPedagio.resx">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarAviao.resx">
+      <DependentUpon>frGerenciarAviao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarAviaoDeGuerra.resx">
+      <DependentUpon>frGerenciarAviaoDeGuerra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarCaminhao.resx">
+      <DependentUpon>frGerenciarCaminhao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciar.resx">
+      <DependentUpon>frGerenciar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarCarro.resx">
+      <DependentUpon>frGerenciarCarro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frGerenciarMarcas.resx">
       <DependentUpon>frGerenciarMarcas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frGerenciarModelos.resx">
       <DependentUpon>frGerenciarModelos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarMoto.resx">
+      <DependentUpon>frGerenciarMoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarOnibus.resx">
+      <DependentUpon>frGerenciarOnibus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frGerenciarPedagio.resx">
       <DependentUpon>frGerenciarPedagio.cs</DependentUpon>
@@ -233,8 +317,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User Controls\ucAcelerar.resx">
+      <DependentUpon>ucAcelerar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls\ucCheckAndUncheck.resx">
       <DependentUpon>ucCheckAndUncheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ucDesacelerar.resx">
+      <DependentUpon>ucDesacelerar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\ucLabelComTextoVariavel.resx">
       <DependentUpon>ucLabelComTextoVariavel.cs</DependentUpon>

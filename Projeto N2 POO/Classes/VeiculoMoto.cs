@@ -13,15 +13,12 @@ namespace Projeto_N2_POO.Classes
         public string Empinar()
         {
             if (Empinando)
-            {
                 Empinando = false;
-                return "A moto " + Modelo + "não está mais empinando.";
-            }
             else
-            {
-                Empinando = false;
-                return "A moto " + Modelo + "não está mais empinando.";
-            }
+                Empinando = true;
+
+            return "A moto " + Identificacao +
+                   (Empinando ? " está" : " não está") + " empinando";
         }
         public double PagarPedagio() => 3;
     }

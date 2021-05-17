@@ -8,6 +8,6 @@ namespace Projeto_N2_POO.Interfaces
 {
     interface IVeiculoDeGuerra
     {
-        void Atacar();
+        string Atacar();
     }
 }

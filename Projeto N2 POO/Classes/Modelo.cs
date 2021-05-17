@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_N2_POO.Classes
 {
-    class Modelo
+    public class Modelo
     {
         private int codigo;
         private string descricao;

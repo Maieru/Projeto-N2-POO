@@ -69,9 +69,9 @@ namespace Projeto_N2_POO.Forms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(68, 119);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 19);
+            this.label1.Size = new System.Drawing.Size(148, 19);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Pesquisar ( Codigo ):";
+            this.label1.Text = "Pesquisar ( Descrição ):";
             // 
             // groupBox1
             // 

@@ -23,7 +23,7 @@ namespace Projeto_N2_POO.Classes
                 quantidadeDeEixos = value;
             }
         }
-        public bool LimpadorLigado { get; private set; } = false;
+        public bool LimpadorLigado { get; private set; }
         public double PesoCarregado
         {
             get => pesoCarregado;

@@ -7,7 +7,7 @@ using Projeto_N2_POO.Interfaces;
 
 namespace Projeto_N2_POO.Classes
 {
-    class VeiculoBase
+    public abstract class VeiculoBase
     {
         private string identificacao;
         private int velocidade = 0;

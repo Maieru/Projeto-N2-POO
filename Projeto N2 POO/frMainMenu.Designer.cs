@@ -370,6 +370,7 @@ namespace Projeto_N2_POO
             this.btnGenAviaoDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenAviaoDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenAviaoDeGuerra.UseVisualStyleBackColor = false;
+            this.btnGenAviaoDeGuerra.Click += new System.EventHandler(this.btnGenAviaoDeGuerra_Click);
             // 
             // btnGenAviao
             // 
@@ -391,6 +392,7 @@ namespace Projeto_N2_POO
             this.btnGenAviao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenAviao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenAviao.UseVisualStyleBackColor = false;
+            this.btnGenAviao.Click += new System.EventHandler(this.btnGenAviao_Click);
             // 
             // btnGenMoto
             // 
@@ -412,6 +414,7 @@ namespace Projeto_N2_POO
             this.btnGenMoto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenMoto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenMoto.UseVisualStyleBackColor = false;
+            this.btnGenMoto.Click += new System.EventHandler(this.btnGenMoto_Click);
             // 
             // btnGenOnibus
             // 
@@ -433,6 +436,7 @@ namespace Projeto_N2_POO
             this.btnGenOnibus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenOnibus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenOnibus.UseVisualStyleBackColor = false;
+            this.btnGenOnibus.Click += new System.EventHandler(this.btnGenOnibus_Click);
             // 
             // btnGenCaminhao
             // 
@@ -454,6 +458,7 @@ namespace Projeto_N2_POO
             this.btnGenCaminhao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenCaminhao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenCaminhao.UseVisualStyleBackColor = false;
+            this.btnGenCaminhao.Click += new System.EventHandler(this.btnGenCaminhao_Click);
             // 
             // btnGenCarro
             // 
@@ -475,6 +480,7 @@ namespace Projeto_N2_POO
             this.btnGenCarro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenCarro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenCarro.UseVisualStyleBackColor = false;
+            this.btnGenCarro.Click += new System.EventHandler(this.btnGenCarro_Click);
             // 
             // btnGerencia
             // 
@@ -492,7 +498,7 @@ namespace Projeto_N2_POO
             this.btnGerencia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGerencia.Size = new System.Drawing.Size(208, 35);
             this.btnGerencia.TabIndex = 7;
-            this.btnGerencia.Text = "Gerenciar Veículos";
+            this.btnGerencia.Text = "Gerenciar";
             this.btnGerencia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGerencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGerencia.UseVisualStyleBackColor = false;
@@ -647,6 +653,7 @@ namespace Projeto_N2_POO
             this.btnCadAviaoDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadAviaoDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadAviaoDeGuerra.UseVisualStyleBackColor = false;
+            this.btnCadAviaoDeGuerra.Click += new System.EventHandler(this.btnCadAviaoDeGuerra_Click);
             // 
             // btnCadAviao
             // 

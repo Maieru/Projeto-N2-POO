@@ -9,7 +9,7 @@ namespace Projeto_N2_POO.Classes
 {
     class VeiculoAviao : VeiculoAereoBase, IVeiculoComLimpador
     {
-        public bool LimpadorLigado { get; private set; } = false;
+        public bool LimpadorLigado { get; private set; }
 
         public string AlteraLimpador()
         {

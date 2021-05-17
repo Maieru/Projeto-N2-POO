@@ -7,7 +7,7 @@ using Projeto_N2_POO.Interfaces;
 
 namespace Projeto_N2_POO.Classes
 {
-    class VeiculoBaseComPassageiro : VeiculoBase, IVeiculoPossuiPassageiro
+    abstract class VeiculoBaseComPassageiro : VeiculoBase, IVeiculoPossuiPassageiro
     {
         private int capacidadeDePassageiro;
 

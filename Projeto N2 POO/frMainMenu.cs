@@ -37,6 +37,7 @@ namespace Projeto_N2_POO
                 pnlGerencia.Visible = false;
             else
                 pnlGerencia.Visible = true;
+            AbrirForm(new frGerenciar());
         }
         private void AbrirForm(Form formASerAberto)
         {
@@ -92,6 +93,34 @@ namespace Projeto_N2_POO
         private void btnCadAviao_Click(object sender, EventArgs e)
         {
             AbrirForm(new frCadastroAviao());
+        }
+        private void btnCadAviaoDeGuerra_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroAviaoDeGuerra());
+        }
+        private void btnGenCarro_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarCarro());
+        }
+        private void btnGenCaminhao_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarCaminhao());
+        }
+        private void btnGenOnibus_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarOnibus());
+        }
+        private void btnGenMoto_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarMoto());
+        }
+        private void btnGenAviao_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarAviao());
+        }
+        private void btnGenAviaoDeGuerra_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarAviaoDeGuerra());
         }
         private void btnGenMarca_Click(object sender, EventArgs e)
         {

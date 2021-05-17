@@ -11,6 +11,7 @@ namespace Projeto_N2_POO.Classes
     {
         private string identificacao;
         private string localizacao;
+        private double valorRecebido;
 
         public string Identificacao
         {
@@ -32,13 +33,22 @@ namespace Projeto_N2_POO.Classes
                 localizacao = value;
             }
         }
-        public double TotalRecebidoDePedagios { get; private set; } = 0;
+        public double TotalRecebidoDePedagios
+        {
+            get => valorRecebido;
+            set
+            {
+                if (value < 0)
+                    throw new Exception("O total de valor recebido no pedágio não pode ser menor que 0.");
+                valorRecebido = value;
+            }
+        }
 
         public string Receber(IVeiculoPagaPedagio veiculo)
         {
             TotalRecebidoDePedagios += veiculo.PagarPedagio();
 
-            return veiculo.ToString() + "|Pagou: " + veiculo.PagarPedagio();
+            return (veiculo as VeiculoBase).Identificacao + " pagou: " + veiculo.PagarPedagio();
         }
         public override string ToString()
         {
@@ -46,7 +56,6 @@ namespace Projeto_N2_POO.Classes
                    "|Localização: " + Localizacao +
                    "|Total recebido: " + TotalRecebidoDePedagios;
         }
-
         public Pedagio(string identificacao, string localizacao)
         {
             Identificacao = identificacao;
