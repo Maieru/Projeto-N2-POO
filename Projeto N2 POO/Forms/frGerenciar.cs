@@ -19,6 +19,12 @@ namespace Projeto_N2_POO.Forms
             InitializeComponent();
             cmbSelecaoPedagio.DataSource = Dados.Pedagios;
             cmbSelecaoPedagio.DisplayMember = "Identificacao";
+
+            if (Dados.Veiculos.Count == 0)
+            {
+                //ExibeTelaDeErro(this);
+                return;
+            }
         }
         private void btnAlterarLimpador_Click(object sender, EventArgs e)
         {
@@ -27,6 +33,13 @@ namespace Projeto_N2_POO.Forms
             foreach (VeiculoBase veiculo in Dados.Veiculos)
                 if (veiculo is IVeiculoComLimpador)
                     sg.AppendLine((veiculo as IVeiculoComLimpador).AlteraLimpador());
+
+            if (string.IsNullOrEmpty(sg.ToString()))
+            {
+                MessageBox.Show("Não foram encontrados veiculos que Satisfazerem o requisito",
+                                "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             MessageBox.Show("Os seguintes veiculos tiveram seu limpador alterado: \n" +
                             sg.ToString(), "Sucesso!", MessageBoxButtons.OK,
@@ -44,6 +57,13 @@ namespace Projeto_N2_POO.Forms
                 if (veiculo is IVeiculoPagaPedagio)
                     sg.AppendLine(pedagio.Receber(veiculo as IVeiculoPagaPedagio));
 
+            if (string.IsNullOrEmpty(sg.ToString()))
+            {
+                MessageBox.Show("Não foram encontrados veiculos que Satisfazerem o requisito",
+                                "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             MessageBox.Show("Os seguintes veiculos pagaram pedágio: \n" +
                             sg.ToString(), "Sucesso!", MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
@@ -57,6 +77,13 @@ namespace Projeto_N2_POO.Forms
             foreach (VeiculoBase veiculo in Dados.Veiculos)
                 if (veiculo is IVeiculoMarinho)
                     sg.AppendLine((veiculo as IVeiculoMarinho).Atracar());
+
+            if (string.IsNullOrEmpty(sg.ToString()))
+            {
+                MessageBox.Show("Não foram encontrados veiculos que Satisfazerem o requisito",
+                                "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             MessageBox.Show("Os seguintes veiculos atracaram: \n" +
                             sg.ToString(), "Sucesso!", MessageBoxButtons.OK,
@@ -72,6 +99,13 @@ namespace Projeto_N2_POO.Forms
                 if (veiculo is IVeiculoDeGuerra)
                     sg.AppendLine((veiculo as IVeiculoDeGuerra).Atacar());
 
+            if (string.IsNullOrEmpty(sg.ToString()))
+            {
+                MessageBox.Show("Não foram encontrados veiculos que Satisfazerem o requisito",
+                                "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             MessageBox.Show("Os seguintes veiculos atacaram: \n" +
                             sg.ToString(), "Sucesso!", MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
@@ -83,6 +117,13 @@ namespace Projeto_N2_POO.Forms
             foreach (VeiculoBase veiculo in Dados.Veiculos)
                 if (veiculo is VeiculoMoto)
                     sg.AppendLine((veiculo as VeiculoMoto).Empinar());
+
+            if (string.IsNullOrEmpty(sg.ToString()))
+            {
+                MessageBox.Show("Não foram encontrados veiculos que Satisfazerem o requisito",
+                                "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
             MessageBox.Show(sg.ToString(), "Sucesso!", MessageBoxButtons.OK,
                             MessageBoxIcon.Information);

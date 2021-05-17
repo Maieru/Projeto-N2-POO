@@ -21,7 +21,15 @@ namespace Projeto_N2_POO.Forms
             cbmMarca.DataSource = Dados.Marcas;
             cbmMarca.DisplayMember = "Descricao";
 
-            cbmTipoVeiculo.DataSource = (cbmMarca.SelectedItem as Marca).TiposProduzidos;
+            if (Dados.Marcas.Count > 0)
+                cbmTipoVeiculo.DataSource = (cbmMarca.SelectedItem as Marca).TiposProduzidos;
+            else
+            {
+                ExibeTelaDeErro(this);
+                MessageBox.Show("Não foi possivel carregar as marcas. Por favor, tente criar alguma.", "Erro !",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+                
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

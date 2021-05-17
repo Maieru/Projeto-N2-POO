@@ -28,7 +28,7 @@ namespace Projeto_N2_POO.Forms
 
             if (veiculosDoTipoCadastrados.Count == 0)
             {
-                ExibeTelaDeErro();
+                ExibeTelaDeErro(this);
                 return;
             }
 

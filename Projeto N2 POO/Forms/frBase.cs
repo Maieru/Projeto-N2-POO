@@ -28,18 +28,20 @@ namespace Projeto_N2_POO.Forms
                     LimpaCampos(control.Controls);
             }
         }
-        public void ExibeTelaDeErro()
+        public void ExibeTelaDeErro(Form form)
         {
+            form.Controls.Clear();
+
             Panel panel = new Panel();
             panel.Dock = DockStyle.Fill;
             panel.Controls.Add(
             new Label
             {
-                Text = "Nenhum pedágio encontrado",
+                Text = "Nenhum item encontrado",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Dock = DockStyle.Fill
             });
-            Controls.Add(panel);
+            form.Controls.Add(panel);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Projeto_N2_POO.Forms
 
             if (Dados.Marcas.Count == 0)
             {
-                ExibeTelaDeErro();
+                ExibeTelaDeErro(this);
                 return;
             }
 

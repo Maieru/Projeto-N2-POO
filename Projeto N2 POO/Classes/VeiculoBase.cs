@@ -11,6 +11,7 @@ namespace Projeto_N2_POO.Classes
     {
         private string identificacao;
         private int velocidade = 0;
+        private Modelo modelo;
 
         public string Identificacao
         {
@@ -22,7 +23,16 @@ namespace Projeto_N2_POO.Classes
                 identificacao = value;
             }
         }
-        public Modelo Modelo { get; set; }
+        public Modelo Modelo
+        {
+            get => modelo;
+            set
+            {
+                if (value == null)
+                    throw new Exception("O modelo deve ser preenchido.");
+                modelo = value;
+            }
+        }
         public int Velocidade
         {
             get => velocidade;

@@ -29,9 +29,20 @@ namespace Projeto_N2_POO.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnInstanciar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnInstanciar = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(114, 277);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(346, 19);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "ATENÇÃO: Isso apagará todos os dados armazenados !";
             // 
             // btnInstanciar
             // 
@@ -52,16 +63,6 @@ namespace Projeto_N2_POO.Forms
             this.btnInstanciar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnInstanciar.UseVisualStyleBackColor = false;
             this.btnInstanciar.Click += new System.EventHandler(this.btnInstanciar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(114, 277);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(346, 19);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "ATENÇÃO: Isso apagará todos os dados armazenados !";
             // 
             // frCadastro
             // 

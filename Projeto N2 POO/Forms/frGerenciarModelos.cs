@@ -18,9 +18,9 @@ namespace Projeto_N2_POO.Forms
         {
             InitializeComponent();
 
-            if (Dados.Pedagios.Count == 0)
+            if (Dados.Modelos.Count == 0)
             {
-                ExibeTelaDeErro();
+                ExibeTelaDeErro(this);
                 return;
             }
 

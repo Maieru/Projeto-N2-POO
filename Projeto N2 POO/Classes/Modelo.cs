@@ -11,6 +11,7 @@ namespace Projeto_N2_POO.Classes
     {
         private int codigo;
         private string descricao;
+        private Marca marca;
         EnumTipoVeiculo tipoVeiculo;
 
         public int Codigo
@@ -33,7 +34,16 @@ namespace Projeto_N2_POO.Classes
                 descricao = value;
             }
         }
-        public Marca Marca { get; set; }
+        public Marca Marca
+        {
+            get => marca;
+            set
+            {
+                if (value == null || value.TiposProduzidos == null)
+                    throw new Exception("A marca deve ser preenchida.");
+                marca = value;
+            }
+        }
         public EnumTipoVeiculo TipoVeiculo
         {
             get => tipoVeiculo;
