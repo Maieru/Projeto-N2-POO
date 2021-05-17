@@ -31,14 +31,9 @@ namespace Projeto_N2_POO
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frMainMenu));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSobre = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pnlGerencia = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnlCadastro = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlMainForm = new System.Windows.Forms.Panel();
-            this.btnSobre = new System.Windows.Forms.Button();
             this.btnGenPedagio = new System.Windows.Forms.Button();
             this.btnGenModelo = new System.Windows.Forms.Button();
             this.btnGenMarca = new System.Windows.Forms.Button();
@@ -52,9 +47,11 @@ namespace Projeto_N2_POO
             this.btnGenCaminhao = new System.Windows.Forms.Button();
             this.btnGenCarro = new System.Windows.Forms.Button();
             this.btnGerencia = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnCadSemaforo = new System.Windows.Forms.Button();
             this.btnCadModelo = new System.Windows.Forms.Button();
             this.btnCadMarca = new System.Windows.Forms.Button();
+            this.pnlCadastro = new System.Windows.Forms.Panel();
             this.btnCadNavioDeGuerra = new System.Windows.Forms.Button();
             this.btnCadNavio = new System.Windows.Forms.Button();
             this.btnCadTrem = new System.Windows.Forms.Button();
@@ -65,6 +62,9 @@ namespace Projeto_N2_POO
             this.btnCadCaminhao = new System.Windows.Forms.Button();
             this.btnCadCarro = new System.Windows.Forms.Button();
             this.btnMenuCadastro = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlMainForm = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.pnlGerencia.SuspendLayout();
             this.pnlCadastro.SuspendLayout();
@@ -92,6 +92,28 @@ namespace Projeto_N2_POO
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(225, 500);
             this.panel2.TabIndex = 1;
+            // 
+            // btnSobre
+            // 
+            this.btnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnSobre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSobre.FlatAppearance.BorderSize = 0;
+            this.btnSobre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSobre.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSobre.ForeColor = System.Drawing.Color.White;
+            this.btnSobre.Image = global::Projeto_N2_POO.Properties.Resources.sobre;
+            this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSobre.Location = new System.Drawing.Point(0, 970);
+            this.btnSobre.Name = "btnSobre";
+            this.btnSobre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSobre.Size = new System.Drawing.Size(208, 35);
+            this.btnSobre.TabIndex = 11;
+            this.btnSobre.Text = "Sobre";
+            this.btnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSobre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSobre.UseVisualStyleBackColor = false;
+            this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
             // panel5
             // 
@@ -122,82 +144,6 @@ namespace Projeto_N2_POO
             this.pnlGerencia.Size = new System.Drawing.Size(208, 420);
             this.pnlGerencia.TabIndex = 8;
             this.pnlGerencia.Visible = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 475);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(208, 20);
-            this.panel4.TabIndex = 0;
-            // 
-            // pnlCadastro
-            // 
-            this.pnlCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.pnlCadastro.Controls.Add(this.btnCadNavioDeGuerra);
-            this.pnlCadastro.Controls.Add(this.btnCadNavio);
-            this.pnlCadastro.Controls.Add(this.btnCadTrem);
-            this.pnlCadastro.Controls.Add(this.btnCadAviaoDeGuerra);
-            this.pnlCadastro.Controls.Add(this.btnCadAviao);
-            this.pnlCadastro.Controls.Add(this.btnCadMoto);
-            this.pnlCadastro.Controls.Add(this.btnCadOnibus);
-            this.pnlCadastro.Controls.Add(this.btnCadCaminhao);
-            this.pnlCadastro.Controls.Add(this.btnCadCarro);
-            this.pnlCadastro.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCadastro.Location = new System.Drawing.Point(0, 55);
-            this.pnlCadastro.Name = "pnlCadastro";
-            this.pnlCadastro.Size = new System.Drawing.Size(208, 315);
-            this.pnlCadastro.TabIndex = 0;
-            this.pnlCadastro.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(208, 20);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pnlMainForm);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(225, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(575, 500);
-            this.panel1.TabIndex = 2;
-            // 
-            // pnlMainForm
-            // 
-            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(135)))));
-            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainForm.Location = new System.Drawing.Point(0, 0);
-            this.pnlMainForm.Name = "pnlMainForm";
-            this.pnlMainForm.Size = new System.Drawing.Size(575, 500);
-            this.pnlMainForm.TabIndex = 0;
-            // 
-            // btnSobre
-            // 
-            this.btnSobre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.btnSobre.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSobre.FlatAppearance.BorderSize = 0;
-            this.btnSobre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.btnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSobre.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSobre.ForeColor = System.Drawing.Color.White;
-            this.btnSobre.Image = global::Projeto_N2_POO.Properties.Resources.sobre;
-            this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSobre.Location = new System.Drawing.Point(0, 970);
-            this.btnSobre.Name = "btnSobre";
-            this.btnSobre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSobre.Size = new System.Drawing.Size(208, 35);
-            this.btnSobre.TabIndex = 11;
-            this.btnSobre.Text = "Sobre";
-            this.btnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSobre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSobre.UseVisualStyleBackColor = false;
-            this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
             // btnGenPedagio
             // 
@@ -485,6 +431,14 @@ namespace Projeto_N2_POO
             this.btnGerencia.UseVisualStyleBackColor = false;
             this.btnGerencia.Click += new System.EventHandler(this.btnGerencia_Click);
             // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 475);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(208, 20);
+            this.panel4.TabIndex = 0;
+            // 
             // btnCadSemaforo
             // 
             this.btnCadSemaforo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
@@ -550,6 +504,25 @@ namespace Projeto_N2_POO
             this.btnCadMarca.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadMarca.UseVisualStyleBackColor = false;
             this.btnCadMarca.Click += new System.EventHandler(this.btnCadMarca_Click);
+            // 
+            // pnlCadastro
+            // 
+            this.pnlCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pnlCadastro.Controls.Add(this.btnCadNavioDeGuerra);
+            this.pnlCadastro.Controls.Add(this.btnCadNavio);
+            this.pnlCadastro.Controls.Add(this.btnCadTrem);
+            this.pnlCadastro.Controls.Add(this.btnCadAviaoDeGuerra);
+            this.pnlCadastro.Controls.Add(this.btnCadAviao);
+            this.pnlCadastro.Controls.Add(this.btnCadMoto);
+            this.pnlCadastro.Controls.Add(this.btnCadOnibus);
+            this.pnlCadastro.Controls.Add(this.btnCadCaminhao);
+            this.pnlCadastro.Controls.Add(this.btnCadCarro);
+            this.pnlCadastro.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlCadastro.Location = new System.Drawing.Point(0, 55);
+            this.pnlCadastro.Name = "pnlCadastro";
+            this.pnlCadastro.Size = new System.Drawing.Size(208, 315);
+            this.pnlCadastro.TabIndex = 0;
+            this.pnlCadastro.Visible = false;
             // 
             // btnCadNavioDeGuerra
             // 
@@ -771,6 +744,33 @@ namespace Projeto_N2_POO
             this.btnMenuCadastro.UseVisualStyleBackColor = false;
             this.btnMenuCadastro.Click += new System.EventHandler(this.btnAbriMenuCadastro_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(208, 20);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pnlMainForm);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(225, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(575, 500);
+            this.panel1.TabIndex = 2;
+            // 
+            // pnlMainForm
+            // 
+            this.pnlMainForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(135)))), ((int)(((byte)(135)))));
+            this.pnlMainForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainForm.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainForm.Name = "pnlMainForm";
+            this.pnlMainForm.Size = new System.Drawing.Size(575, 500);
+            this.pnlMainForm.TabIndex = 0;
+            // 
             // frMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -780,7 +780,7 @@ namespace Projeto_N2_POO
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(800, 500);
+            this.MinimumSize = new System.Drawing.Size(816, 539);
             this.Name = "frMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciador de Veiculos";
