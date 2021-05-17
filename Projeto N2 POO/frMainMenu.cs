@@ -98,6 +98,18 @@ namespace Projeto_N2_POO
         {
             AbrirForm(new frCadastroAviaoDeGuerra());
         }
+        private void btnCadTrem_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroTrem());
+        }
+        private void btnCadNavio_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroNavio());
+        }
+        private void btnCadNavioDeGuerra_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frCadastroNavioDeGuerra());
+        }
         private void btnGenCarro_Click(object sender, EventArgs e)
         {
             AbrirForm(new frGerenciarCarro());
@@ -121,6 +133,18 @@ namespace Projeto_N2_POO
         private void btnGenAviaoDeGuerra_Click(object sender, EventArgs e)
         {
             AbrirForm(new frGerenciarAviaoDeGuerra());
+        }
+        private void btnGenTrem_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarTrem());
+        }
+        private void btnGenNavio_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarNavio());
+        }
+        private void btnGenNavioDeGuerra_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frGerenciarNaviosDeGuerra());
         }
         private void btnGenMarca_Click(object sender, EventArgs e)
         {

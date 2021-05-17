@@ -57,17 +57,26 @@
     <Compile Include="Classes\Marca.cs" />
     <Compile Include="Classes\Modelo.cs" />
     <Compile Include="Classes\VeiculoMoto.cs" />
+    <Compile Include="Classes\VeiculoNavio.cs" />
+    <Compile Include="Classes\VeiculoNavioDeGuerra.cs" />
     <Compile Include="Classes\VeiculoOnibus.cs" />
     <Compile Include="Classes\Pedagio.cs" />
     <Compile Include="Classes\VeiculoAereoBase.cs" />
     <Compile Include="Classes\VeiculoBase.cs" />
     <Compile Include="Classes\VeiculoBaseComPassageiro.cs" />
+    <Compile Include="Classes\VeiculoTrem.cs" />
     <Compile Include="Enumeradores\EnumTipoVeiculo.cs" />
     <Compile Include="Forms\frBase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frBase.Designer.cs">
       <DependentUpon>frBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCadastroNavioDeGuerra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroNavioDeGuerra.Designer.cs">
+      <DependentUpon>frCadastroNavioDeGuerra.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frCadastroAviao.cs">
       <SubType>Form</SubType>
@@ -111,6 +120,12 @@
     <Compile Include="Forms\frCadastroMoto.Designer.cs">
       <DependentUpon>frCadastroMoto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frCadastroNavio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroNavio.Designer.cs">
+      <DependentUpon>frCadastroNavio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frCadastroOnibus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +137,12 @@
     </Compile>
     <Compile Include="Forms\frCadastroPedagio.Designer.cs">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frCadastroTrem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frCadastroTrem.Designer.cs">
+      <DependentUpon>frCadastroTrem.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frGerenciarAviao.cs">
       <SubType>Form</SubType>
@@ -171,6 +192,18 @@
     <Compile Include="Forms\frGerenciarMoto.Designer.cs">
       <DependentUpon>frGerenciarMoto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frGerenciarNavio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarNavio.Designer.cs">
+      <DependentUpon>frGerenciarNavio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarNaviosDeGuerra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarNaviosDeGuerra.Designer.cs">
+      <DependentUpon>frGerenciarNaviosDeGuerra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frGerenciarOnibus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +215,12 @@
     </Compile>
     <Compile Include="Forms\frGerenciarPedagio.Designer.cs">
       <DependentUpon>frGerenciarPedagio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frGerenciarTrem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frGerenciarTrem.Designer.cs">
+      <DependentUpon>frGerenciarTrem.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frSobre.cs">
       <SubType>Form</SubType>
@@ -265,11 +304,20 @@
     <EmbeddedResource Include="Forms\frCadastroMoto.resx">
       <DependentUpon>frCadastroMoto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroNavio.resx">
+      <DependentUpon>frCadastroNavio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroNavioDeGuerra.resx">
+      <DependentUpon>frCadastroNavioDeGuerra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroOnibus.resx">
       <DependentUpon>frCadastroOnibus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frCadastroPedagio.resx">
       <DependentUpon>frCadastroPedagio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frCadastroTrem.resx">
+      <DependentUpon>frCadastroTrem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frGerenciarAviao.resx">
       <DependentUpon>frGerenciarAviao.cs</DependentUpon>
@@ -295,11 +343,20 @@
     <EmbeddedResource Include="Forms\frGerenciarMoto.resx">
       <DependentUpon>frGerenciarMoto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarNavio.resx">
+      <DependentUpon>frGerenciarNavio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarNaviosDeGuerra.resx">
+      <DependentUpon>frGerenciarNaviosDeGuerra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frGerenciarOnibus.resx">
       <DependentUpon>frGerenciarOnibus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frGerenciarPedagio.resx">
       <DependentUpon>frGerenciarPedagio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frGerenciarTrem.resx">
+      <DependentUpon>frGerenciarTrem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frSobre.resx">
       <DependentUpon>frSobre.cs</DependentUpon>

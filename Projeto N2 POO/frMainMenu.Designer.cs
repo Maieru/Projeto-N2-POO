@@ -307,6 +307,7 @@ namespace Projeto_N2_POO
             this.btnGenNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenNavioDeGuerra.UseVisualStyleBackColor = false;
+            this.btnGenNavioDeGuerra.Click += new System.EventHandler(this.btnGenNavioDeGuerra_Click);
             // 
             // btnGenNavio
             // 
@@ -328,6 +329,7 @@ namespace Projeto_N2_POO
             this.btnGenNavio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenNavio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenNavio.UseVisualStyleBackColor = false;
+            this.btnGenNavio.Click += new System.EventHandler(this.btnGenNavio_Click);
             // 
             // btnGenTrem
             // 
@@ -349,6 +351,7 @@ namespace Projeto_N2_POO
             this.btnGenTrem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGenTrem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGenTrem.UseVisualStyleBackColor = false;
+            this.btnGenTrem.Click += new System.EventHandler(this.btnGenTrem_Click);
             // 
             // btnGenAviaoDeGuerra
             // 
@@ -590,6 +593,7 @@ namespace Projeto_N2_POO
             this.btnCadNavioDeGuerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadNavioDeGuerra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadNavioDeGuerra.UseVisualStyleBackColor = false;
+            this.btnCadNavioDeGuerra.Click += new System.EventHandler(this.btnCadNavioDeGuerra_Click);
             // 
             // btnCadNavio
             // 
@@ -611,6 +615,7 @@ namespace Projeto_N2_POO
             this.btnCadNavio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadNavio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadNavio.UseVisualStyleBackColor = false;
+            this.btnCadNavio.Click += new System.EventHandler(this.btnCadNavio_Click);
             // 
             // btnCadTrem
             // 
@@ -632,6 +637,7 @@ namespace Projeto_N2_POO
             this.btnCadTrem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadTrem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadTrem.UseVisualStyleBackColor = false;
+            this.btnCadTrem.Click += new System.EventHandler(this.btnCadTrem_Click);
             // 
             // btnCadAviaoDeGuerra
             // 
