@@ -94,6 +94,13 @@ namespace Projeto_N2_POO.Forms
         }
         private void btnPagarPedagio_Click(object sender, EventArgs e)
         {
+            if (cbmPedagios.SelectedItem == null)
+            {
+                MessageBox.Show("Não existe pedágio selecionado", "Erro !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+                return;
+            }
+
             MessageBox.Show((cbmPedagios.SelectedItem as Pedagio).Receber(veiculosDoTipoCadastrados[index]), "Sucesso !", MessageBoxButtons.OK,
                                  MessageBoxIcon.Information);
             Dados.SalvarPedagios();
