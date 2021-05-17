@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Projeto_N2_POO.Classes.Dados" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAARQAAAIAAAAgAAAAAgAAEBACAAEAACABAIJAAAA=</HashCode>
+      <FileName>Classes\Dados.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.Marca" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAQQABAEAEAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Marca.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoAereoBase" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAgAAAA=</HashCode>
+      <FileName>Classes\VeiculoAereoBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoAviao" Collapsed="true">
+    <Position X="15.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\VeiculoAviao.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoAviaoDeGuerra" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Classes\VeiculoAviaoDeGuerra.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoBase" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEAAAAAgAAAAoAAAAIAAgAAAAAAAE=</HashCode>
+      <FileName>Classes\VeiculoBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoBaseComPassageiro" Collapsed="true">
+    <Position X="9.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Classes\VeiculoBaseComPassageiro.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoCaminhao" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAgEAAkIBAAABAAAAEAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Classes\VeiculoCaminhao.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoCarro" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAgAEAEQAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\VeiculoCarro.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoMoto" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\VeiculoMoto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoNavio" Collapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Classes\VeiculoNavio.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoNavioDeGuerra" Collapsed="true">
+    <Position X="13" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Classes\VeiculoNavioDeGuerra.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoOnibus" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAgACAEAAAAABAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Classes\VeiculoOnibus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.VeiculoTrem" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAEAAAAAAAAAAAAAAIAAACAAAAAA=</HashCode>
+      <FileName>Classes\VeiculoTrem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.Modelo" Collapsed="true">
+    <Position X="12.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABABAAgQABAIAEAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Modelo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Projeto_N2_POO.Classes.Pedagio" Collapsed="true">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAhAAAEIAQAAAAAAAgAAAAICAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Pedagio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

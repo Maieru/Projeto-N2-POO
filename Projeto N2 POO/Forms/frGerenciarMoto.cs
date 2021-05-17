@@ -94,7 +94,8 @@ namespace Projeto_N2_POO.Forms
         }
         private void btnPagarPedagio_Click(object sender, EventArgs e)
         {
-            (cbmPedagios.SelectedItem as Pedagio).Receber(veiculosDoTipoCadastrados[index]);
+            MessageBox.Show((cbmPedagios.SelectedItem as Pedagio).Receber(veiculosDoTipoCadastrados[index]), "Sucesso !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
             Dados.SalvarPedagios();
         }
     }

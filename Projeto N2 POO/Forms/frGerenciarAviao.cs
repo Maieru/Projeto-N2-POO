@@ -87,7 +87,8 @@ namespace Projeto_N2_POO.Forms
         }
         private void btnAlterarLimpador_Click(object sender, EventArgs e)
         {
-            veiculosDoTipoCadastrados[index].AlteraLimpador();
+            MessageBox.Show(veiculosDoTipoCadastrados[index].AlteraLimpador(), "Sucesso!",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
             Dados.SalvarVeiculos();
             AtualizaValor();
         }

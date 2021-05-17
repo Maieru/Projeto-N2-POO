@@ -95,7 +95,8 @@ namespace Projeto_N2_POO.Forms
         }
         private void btnAlterarLimpador_Click(object sender, EventArgs e)
         {
-            veiculosDoTipoCadastrados[index].AlteraLimpador();
+            MessageBox.Show(veiculosDoTipoCadastrados[index].AlteraLimpador(), "Sucesso!",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
             Dados.SalvarVeiculos();
             AtualizaValor();
         }
@@ -107,6 +108,8 @@ namespace Projeto_N2_POO.Forms
                 valor = Convert.ToDouble(txtValor.Text);
                 veiculosDoTipoCadastrados[index].Carregar(valor);
                 AtualizaValor();
+                MessageBox.Show("Carregado com sucesso!", "Sucesso !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
             }
             catch (Exception erro)
             {
@@ -122,6 +125,9 @@ namespace Projeto_N2_POO.Forms
                 valor = Convert.ToDouble(txtValor.Text);
                 veiculosDoTipoCadastrados[index].Descarregar(valor);
                 AtualizaValor();
+
+                MessageBox.Show("Descarregado com sucesso!", "Sucesso !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
             }
             catch (Exception erro)
             {
@@ -131,7 +137,8 @@ namespace Projeto_N2_POO.Forms
         }
         private void btnPagarPedagio_Click(object sender, EventArgs e)
         {
-            (cbmPedagios.SelectedItem as Pedagio).Receber(veiculosDoTipoCadastrados[index]);
+            MessageBox.Show((cbmPedagios.SelectedItem as Pedagio).Receber(veiculosDoTipoCadastrados[index]), "Sucesso !", MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
             Dados.SalvarPedagios();
         }
     }
