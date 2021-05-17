@@ -30,6 +30,11 @@ namespace Projeto_N2_POO
                 pnlCadastro.Visible = false;
             else
                 pnlCadastro.Visible = true;
+
+            if (formAberto == null || pnlCadastro.Visible)
+                AbrirForm(new frCadastro());
+            else
+                AbrirForm(null);
         }
         private void btnGerencia_Click(object sender, EventArgs e)
         {
@@ -37,7 +42,11 @@ namespace Projeto_N2_POO
                 pnlGerencia.Visible = false;
             else
                 pnlGerencia.Visible = true;
-            AbrirForm(new frGerenciar());
+
+            if (formAberto == null || pnlGerencia.Visible)
+                AbrirForm(new frGerenciar());
+            else
+                AbrirForm(null);
         }
         private void AbrirForm(Form formASerAberto)
         {

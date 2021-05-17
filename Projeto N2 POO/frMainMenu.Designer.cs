@@ -38,7 +38,6 @@ namespace Projeto_N2_POO
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMainForm = new System.Windows.Forms.Panel();
             this.btnSobre = new System.Windows.Forms.Button();
-            this.btnConfig = new System.Windows.Forms.Button();
             this.btnGenPedagio = new System.Windows.Forms.Button();
             this.btnGenModelo = new System.Windows.Forms.Button();
             this.btnGenMarca = new System.Windows.Forms.Button();
@@ -76,7 +75,6 @@ namespace Projeto_N2_POO
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
             this.panel2.Controls.Add(this.btnSobre);
-            this.panel2.Controls.Add(this.btnConfig);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.pnlGerencia);
             this.panel2.Controls.Add(this.btnGerencia);
@@ -97,7 +95,7 @@ namespace Projeto_N2_POO
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 1030);
+            this.panel5.Location = new System.Drawing.Point(0, 950);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(208, 20);
             this.panel5.TabIndex = 9;
@@ -118,7 +116,7 @@ namespace Projeto_N2_POO
             this.pnlGerencia.Controls.Add(this.btnGenCaminhao);
             this.pnlGerencia.Controls.Add(this.btnGenCarro);
             this.pnlGerencia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlGerencia.Location = new System.Drawing.Point(0, 610);
+            this.pnlGerencia.Location = new System.Drawing.Point(0, 530);
             this.pnlGerencia.Name = "pnlGerencia";
             this.pnlGerencia.Size = new System.Drawing.Size(208, 420);
             this.pnlGerencia.TabIndex = 8;
@@ -127,7 +125,7 @@ namespace Projeto_N2_POO
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 555);
+            this.panel4.Location = new System.Drawing.Point(0, 475);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(208, 20);
             this.panel4.TabIndex = 0;
@@ -145,7 +143,7 @@ namespace Projeto_N2_POO
             this.pnlCadastro.Controls.Add(this.btnCadCaminhao);
             this.pnlCadastro.Controls.Add(this.btnCadCarro);
             this.pnlCadastro.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCadastro.Location = new System.Drawing.Point(0, 135);
+            this.pnlCadastro.Location = new System.Drawing.Point(0, 55);
             this.pnlCadastro.Name = "pnlCadastro";
             this.pnlCadastro.Size = new System.Drawing.Size(208, 315);
             this.pnlCadastro.TabIndex = 0;
@@ -157,7 +155,7 @@ namespace Projeto_N2_POO
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(208, 100);
+            this.panel3.Size = new System.Drawing.Size(208, 20);
             this.panel3.TabIndex = 1;
             // 
             // panel1
@@ -189,7 +187,7 @@ namespace Projeto_N2_POO
             this.btnSobre.ForeColor = System.Drawing.Color.White;
             this.btnSobre.Image = global::Projeto_N2_POO.Properties.Resources.sobre;
             this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSobre.Location = new System.Drawing.Point(0, 1085);
+            this.btnSobre.Location = new System.Drawing.Point(0, 970);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSobre.Size = new System.Drawing.Size(208, 35);
@@ -199,27 +197,6 @@ namespace Projeto_N2_POO
             this.btnSobre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSobre.UseVisualStyleBackColor = false;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
-            // 
-            // btnConfig
-            // 
-            this.btnConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.btnConfig.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConfig.FlatAppearance.BorderSize = 0;
-            this.btnConfig.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfig.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfig.ForeColor = System.Drawing.Color.White;
-            this.btnConfig.Image = global::Projeto_N2_POO.Properties.Resources.configu;
-            this.btnConfig.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfig.Location = new System.Drawing.Point(0, 1050);
-            this.btnConfig.Name = "btnConfig";
-            this.btnConfig.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnConfig.Size = new System.Drawing.Size(208, 35);
-            this.btnConfig.TabIndex = 10;
-            this.btnConfig.Text = "Configurações";
-            this.btnConfig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnConfig.UseVisualStyleBackColor = false;
             // 
             // btnGenPedagio
             // 
@@ -496,7 +473,7 @@ namespace Projeto_N2_POO
             this.btnGerencia.ForeColor = System.Drawing.Color.White;
             this.btnGerencia.Image = global::Projeto_N2_POO.Properties.Resources.gerenciamento_de_conteudo;
             this.btnGerencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGerencia.Location = new System.Drawing.Point(0, 575);
+            this.btnGerencia.Location = new System.Drawing.Point(0, 495);
             this.btnGerencia.Name = "btnGerencia";
             this.btnGerencia.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGerencia.Size = new System.Drawing.Size(208, 35);
@@ -518,7 +495,7 @@ namespace Projeto_N2_POO
             this.btnCadSemaforo.ForeColor = System.Drawing.Color.White;
             this.btnCadSemaforo.Image = global::Projeto_N2_POO.Properties.Resources.Sem_título;
             this.btnCadSemaforo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadSemaforo.Location = new System.Drawing.Point(0, 520);
+            this.btnCadSemaforo.Location = new System.Drawing.Point(0, 440);
             this.btnCadSemaforo.Name = "btnCadSemaforo";
             this.btnCadSemaforo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCadSemaforo.Size = new System.Drawing.Size(208, 35);
@@ -540,7 +517,7 @@ namespace Projeto_N2_POO
             this.btnCadModelo.ForeColor = System.Drawing.Color.White;
             this.btnCadModelo.Image = global::Projeto_N2_POO.Properties.Resources.modelo_3d;
             this.btnCadModelo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadModelo.Location = new System.Drawing.Point(0, 485);
+            this.btnCadModelo.Location = new System.Drawing.Point(0, 405);
             this.btnCadModelo.Name = "btnCadModelo";
             this.btnCadModelo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCadModelo.Size = new System.Drawing.Size(208, 35);
@@ -562,7 +539,7 @@ namespace Projeto_N2_POO
             this.btnCadMarca.ForeColor = System.Drawing.Color.White;
             this.btnCadMarca.Image = global::Projeto_N2_POO.Properties.Resources.brand1;
             this.btnCadMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadMarca.Location = new System.Drawing.Point(0, 450);
+            this.btnCadMarca.Location = new System.Drawing.Point(0, 370);
             this.btnCadMarca.Name = "btnCadMarca";
             this.btnCadMarca.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnCadMarca.Size = new System.Drawing.Size(208, 35);
@@ -782,7 +759,7 @@ namespace Projeto_N2_POO
             this.btnMenuCadastro.ForeColor = System.Drawing.Color.White;
             this.btnMenuCadastro.Image = global::Projeto_N2_POO.Properties.Resources.iconfinder_edit_document_note_writing_review_3209355;
             this.btnMenuCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenuCadastro.Location = new System.Drawing.Point(0, 100);
+            this.btnMenuCadastro.Location = new System.Drawing.Point(0, 20);
             this.btnMenuCadastro.Name = "btnMenuCadastro";
             this.btnMenuCadastro.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMenuCadastro.Size = new System.Drawing.Size(208, 35);
@@ -844,7 +821,6 @@ namespace Projeto_N2_POO
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnSobre;
-        private System.Windows.Forms.Button btnConfig;
         private System.Windows.Forms.Panel pnlMainForm;
         private System.Windows.Forms.Button btnGenPedagio;
         private System.Windows.Forms.Button btnGenModelo;

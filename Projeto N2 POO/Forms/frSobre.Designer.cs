@@ -49,11 +49,11 @@ namespace Projeto_N2_POO.Forms
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(124, 116);
+            this.label11.Location = new System.Drawing.Point(89, 116);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(326, 39);
+            this.label11.Size = new System.Drawing.Size(396, 39);
             this.label11.TabIndex = 23;
-            this.label11.Text = "Caça Níquel Mágico";
+            this.label11.Text = "Gerenciador de Veiculos";
             // 
             // label10
             // 
