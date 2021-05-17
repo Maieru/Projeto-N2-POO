@@ -33,19 +33,6 @@ namespace Projeto_N2_POO.Forms
             ucValorTotalRecebido.TextoLabel2 = "R$ " + totalArrecadado.ToString("0.00");
             AtualizaValor();
         }
-        public void ExibeTelaDeErro()
-        {
-            Panel panel = new Panel();
-            panel.Dock = DockStyle.Fill;
-            panel.Controls.Add(
-            new Label
-            {
-                Text = "Nenhum pedágio encontrado",
-                TextAlign = ContentAlignment.MiddleCenter,
-                Dock = DockStyle.Fill
-            }) ;
-            Controls.Add(panel);
-        }
         public void AtualizaValor()
         {
             ucIdentificacao.TextoLabel2 = Dados.Pedagios[index].Identificacao;

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Projeto_N2_POO.Enumeradores;
 
 namespace Projeto_N2_POO.Classes
 {
@@ -69,6 +70,16 @@ namespace Projeto_N2_POO.Classes
 
             Modelos.Add(modelo);
             SalvarModelos();
+        }
+        public static List<Modelo> PesquisarModelos(EnumTipoVeiculo tipo)
+        {
+            List<Modelo> aux = new List<Modelo>();
+
+            foreach (Modelo modelo in Modelos)
+                if (modelo.TipoVeiculo == tipo)
+                    aux.Add(modelo);
+
+            return aux;
         }
 
         public static void LerPedagio()

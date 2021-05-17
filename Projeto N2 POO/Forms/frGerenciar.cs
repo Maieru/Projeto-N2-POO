@@ -56,8 +56,7 @@ namespace Projeto_N2_POO.Forms
 
             foreach (VeiculoBase veiculo in Dados.Veiculos)
                 if (veiculo is IVeiculoMarinho)
-                    if ((veiculo as IVeiculoMarinho).VeiculoEstaNoMar)
-                        sg.AppendLine((veiculo as IVeiculoMarinho).Atracar());
+                    sg.AppendLine((veiculo as IVeiculoMarinho).Atracar());
 
             MessageBox.Show("Os seguintes veiculos atracaram: \n" +
                             sg.ToString(), "Sucesso!", MessageBoxButtons.OK,

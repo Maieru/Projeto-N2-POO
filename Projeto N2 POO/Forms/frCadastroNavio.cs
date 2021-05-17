@@ -18,13 +18,7 @@ namespace Projeto_N2_POO.Forms
         {
             InitializeComponent();
 
-            List<Modelo> modelosDeNavio = new List<Modelo>();
-
-            foreach (Modelo modelo in Dados.Modelos)
-                if (modelo.TipoVeiculo == EnumTipoVeiculo.Navio)
-                    modelosDeNavio.Add(modelo);
-
-            cbmModelo.DataSource = modelosDeNavio;
+            cbmModelo.DataSource = Dados.PesquisarModelos(EnumTipoVeiculo.Navio);
             cbmModelo.DisplayMember = "Descricao";
         }
 
