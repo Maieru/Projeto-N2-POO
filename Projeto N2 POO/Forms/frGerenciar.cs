@@ -130,5 +130,27 @@ namespace Projeto_N2_POO.Forms
 
             Dados.SalvarVeiculos();
         }
+
+        private void btnLimpadores_Click(object sender, EventArgs e)
+        {
+            StringBuilder sg = new StringBuilder();
+
+            foreach (VeiculoBase veiculo in Dados.Veiculos)
+                if (veiculo is IVeiculoComLimpador)
+                    sg.AppendLine((veiculo as IVeiculoComLimpador).AlteraLimpador());
+
+            if (string.IsNullOrEmpty(sg.ToString()))
+            {
+                MessageBox.Show("Não foram encontrados veiculos que Satisfazerem o requisito",
+                                "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            MessageBox.Show("Os limpadores dos seguintes veiculos foi alterado: \n" +
+                sg.ToString(), "Sucesso!", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            Dados.SalvarVeiculos();
+        }
     }
 }

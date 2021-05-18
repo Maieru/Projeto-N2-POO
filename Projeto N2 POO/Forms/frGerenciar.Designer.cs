@@ -37,6 +37,7 @@ namespace Projeto_N2_POO.Forms
             this.btnPagarPedagio = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAlterarLimpador = new System.Windows.Forms.Button();
+            this.btnLimpadores = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@ namespace Projeto_N2_POO.Forms
             this.btnEmpinar.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpinar.ForeColor = System.Drawing.Color.White;
             this.btnEmpinar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEmpinar.Location = new System.Drawing.Point(102, 417);
+            this.btnEmpinar.Location = new System.Drawing.Point(102, 368);
             this.btnEmpinar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnEmpinar.Name = "btnEmpinar";
             this.btnEmpinar.Size = new System.Drawing.Size(370, 46);
@@ -70,7 +71,7 @@ namespace Projeto_N2_POO.Forms
             this.btnAtacar.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtacar.ForeColor = System.Drawing.Color.White;
             this.btnAtacar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAtacar.Location = new System.Drawing.Point(102, 340);
+            this.btnAtacar.Location = new System.Drawing.Point(102, 314);
             this.btnAtacar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAtacar.Name = "btnAtacar";
             this.btnAtacar.Size = new System.Drawing.Size(370, 46);
@@ -90,7 +91,7 @@ namespace Projeto_N2_POO.Forms
             this.btnAtracar.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtracar.ForeColor = System.Drawing.Color.White;
             this.btnAtracar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAtracar.Location = new System.Drawing.Point(102, 263);
+            this.btnAtracar.Location = new System.Drawing.Point(102, 260);
             this.btnAtracar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAtracar.Name = "btnAtracar";
             this.btnAtracar.Size = new System.Drawing.Size(370, 46);
@@ -172,11 +173,32 @@ namespace Projeto_N2_POO.Forms
             this.btnAlterarLimpador.UseVisualStyleBackColor = false;
             this.btnAlterarLimpador.Click += new System.EventHandler(this.btnAlterarLimpador_Click);
             // 
+            // btnLimpadores
+            // 
+            this.btnLimpadores.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnLimpadores.FlatAppearance.BorderSize = 0;
+            this.btnLimpadores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnLimpadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpadores.Font = new System.Drawing.Font("Segoe UI Emoji", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpadores.ForeColor = System.Drawing.Color.White;
+            this.btnLimpadores.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpadores.Location = new System.Drawing.Point(102, 422);
+            this.btnLimpadores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLimpadores.Name = "btnLimpadores";
+            this.btnLimpadores.Size = new System.Drawing.Size(370, 46);
+            this.btnLimpadores.TabIndex = 42;
+            this.btnLimpadores.Text = "Alterar todos os limpadores";
+            this.btnLimpadores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpadores.UseVisualStyleBackColor = false;
+            this.btnLimpadores.Click += new System.EventHandler(this.btnLimpadores_Click);
+            // 
             // frGerenciar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 500);
+            this.Controls.Add(this.btnLimpadores);
             this.Controls.Add(this.btnEmpinar);
             this.Controls.Add(this.btnAtacar);
             this.Controls.Add(this.btnAtracar);
@@ -200,5 +222,6 @@ namespace Projeto_N2_POO.Forms
         private System.Windows.Forms.Button btnAtracar;
         private System.Windows.Forms.Button btnAtacar;
         private System.Windows.Forms.Button btnEmpinar;
+        private System.Windows.Forms.Button btnLimpadores;
     }
 }
